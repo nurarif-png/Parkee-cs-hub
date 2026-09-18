@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parkee CS Knowledge Hub</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAHsElEQVR42k2WW4ydVRmG3/db6//33p29pzCbaQsSW8qMJQFRaKGB2gbChUaRBE3EYIIXilrBADZoTLyT04VGr1EOF4rRNpS7ViEcIpQQDIcEDMIM0ELpic5MD7Nn/v9f63u9+Edjsu7W6fvW+33PevnIuRMASCNA0AgDC1qkFbSOWTeEgoEASRMAOCFJUJYqz7XnZXlyNfAsF+CSAEmAR4HBGMgAFWSAFWYlQ6QFGEkDAYqCJBCAJBEQAUSamXXg2VQr1/LGcyYSPEvZGd1lDEZEMMAizWBJTKSBUSogA0nADCRAyCF3KMtrMQluhAOwSIlGucuSIHlMED03CHllM8xUAh2hJACR5oFMCdWSZwegGNgpFYLcAQeYHRVUubJgIkQH5DnJ46w3JUIplMYe1WVYBSMECO4szOsmzy+Uw4mxyy/rnHeepOrYscXZ95sTn9r4gEVE4yAkZGLkvixflldSyqmSx6NZ/eCroULB2L63QEpgjM3phTgcrt9119pv3rzqog00A+A5j96bObbnyUN/eCzNz3OwWikBMomgAQ6MpDPQafewpSy6DF2ELlkQBVmCAQwx6tT86q1XXfHXJ9Z9/WvlxLkU4K6cSXbWTE7s2D786lcWXn9jcXZW3Z57TlKCEryRstjAM90CGECDE07AAAA0S6fnB5uvuHrv7sHFG1XXABrjKIS6KDwEl9Ly8vjnpq96as9g65bm9DzMBBAwMACEGxjEWIAFEKkImUCIhFJdDPpXPvpwORioaViWR2Zmjv9lt7/7Xgix/4XLz7/1lt7kZK6qctDf/MjDz27fUY0qC8HcKQUoEAVYkGFbp9sjO0CHoQAiWcaY505uuufu9d+42evayvL9v/3937fcOtq3f/Ta62dff3Pu2eeO7X1qsPnKsQ0bvK67w2GztHRk/34b6yfPDmUgI7vggpVQhCJpUAAIKNXF6sH6W78NyYri1MGD737/Bzx50nu9wfZt4zu2cdCvPjr8xnduWzx82GKEtP6WbxXnrFaqCJgQoEIsoS5pJVEAAQyASUb40mJ/enr11JTcQX786OPp2LEUuOFnu7Y+/8zW55/ZcO8ulXHp448OPvx7mMk12LixPz3lSyMzBiiAkYxQSbcSKMESMIgQTWqa3to1NIMEYP7VV91TeeFnLt71U4IEN+66p7jwAnefe+UVAJBo1ls7qaYhnEKAIlDCCtBWpACCQDqzEwDbYiIAr2vQ8miUzp4BCTKdPZNHizJ6zvjv4raEoExmkwJQEgVoETDCBAMIBcliXPrkcFvvAMY2TTtUHT365h13npmZOTMz8+YddywfPy5obHoKaHNQdfwEQzAHIQMIkIgQfzM+HslSjFQgSloACf/yyy+fs+kSACcOHHjxhhs6g/F06lQcH4cxn120bqdeXNzx0ovDzVsAnTl4aN/VV+WqyWQDz1ItNkReiRvwlUjgEmNo5hc+2bcPgDfN5LXXrrvxxvrkyWJiQinlxZFSqk+d/vzvfjvcvMXrBuCR/fvrE59aWQACAFjLDACW5A6KcJgIh9w99FYd+tOfU1O3Ul/2wIPlcOjLy1aWYxsvXnvTTdc+8/TUj3YqZ8aQm+aDxx4PnZ5crRgCBQB0yDIoQaLUzgFS7A8WXnvj4yefYgjeNIPpqU3335cW5ruTk1964bmtu/+69rrr5N5C5dCePfOv/rMYDOTuWjndyQwkwBqogTLlhBRgAQLkodd958GHmtGIIeam+eztt19w23fz3FwcG5O7UiIJsjl79p0HHgq9VWo/S6NgDmaghjdS2N4p0fLOLMDM2MpS9HrLH3wos3U3XK+cPedi2zVLs7Prrr8+jI2RVM4M4V+/uv/ok3vjuefknEUmWhYaIgGV1ADhmrKkwWiBDITRgjGCBhW9VQv/eGm4Y3v/ooua5eXaVV166eT554eikDtjPHHg5bd+clcYDFzuQGbIQJYaoIZqeSVYLTZikjKYV7orkAbQzGIIb/3wx0vHj4duV1UlM5Rl27rV/PzbO+80Gs1aywFQYCYFZnkNVoBVVBITkCGniWwHSQix31/+4MO3b9/Zhgx3ucMl8u077156dyb2+9SKJxDpgMBMNLQEqyGrpYbICAIdyKBAIABGM6VcDodz+59+795fhPEBJOSMYLP3Pfjp7r2d4ZA5kwYYYEIbHDKQZDXUQOGLZRnJwkI0RraWi5EWGAoyGIOr6A8WXzygssSWK9etWXPkj0+8//NfFsMJeRYpIMMcSFh5/UaqhAq+LIXLyrKgdWgdWEkGWmH/u8OMCKCR1ustPfdCMTWFk3Oz39tp/TGQbdKCZTILiWiAJNVQDVTuS1CkICALyZBXGh1oNWibnqBAs7BqrHro14eAUJYKIf8fd1uMt4bEoQxLyE5QiJeEUFiIDBEWSGOrAQEBtoJto0EsIuqGgJWlK5vRBailgkQ4YEAXIdDHaNlCIuJ5FqNZaVaCZkaQRgMD2iREwmgkINACCLizdUhqISkDCnJc9GByd1ljrMXkjGYCs1MZRnk0K8FIGUG6gYEreQCgRCFj5ZuJJOGh9apQglfKCdkBmcNFKhKSLDky3ECTIhTI0qwwlgihte4CyRVIkiveXF55qtwbyeW1PEsOCXQXAKP+A1LieJ9MmEEGAAAAAElFTkSuQmCC">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f2ea;
+  --panel:#faf8f1;
+  --panel-2:#efece0;
+  --border:#ddd6c2;
+  --text:#211f1a;
+  --text-dim:#6f6a58;
+  --accent:#ab2f1c;
+  --accent-dim:#f4ddd6;
+  --danger:#a52f1c;
+  --danger-dim:#f6ded7;
+  --warn:#8a5d10;
+  --warn-bg:#f3e7c8;
+  --ink:#211f1a;
+  --ink-2:#1c1a16;
+  --radius:8px;
+  --radius-sm:6px;
+  --shadow:0 1px 2px rgba(33,31,26,.05), 0 6px 18px rgba(33,31,26,.05);
+}
+:root:not([data-theme="light"]){
+  @media (prefers-color-scheme: dark){
+    --bg:#16171a;
+    --panel:#1c1e22;
+    --panel-2:#212327;
+    --border:#33363b;
+    --text:#e9e6dd;
+    --text-dim:#96907e;
+    --accent:#ff7a5c;
+    --accent-dim:#3a231c;
+    --danger:#ff7a5c;
+    --danger-dim:#3a221b;
+    --warn:#dcae57;
+    --warn-bg:#2f2712;
+    --ink:#e9e6dd;
+    --ink-2:#151619;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.3);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16171a;
+  --panel:#1c1e22;
+  --panel-2:#212327;
+  --border:#33363b;
+  --text:#e9e6dd;
+  --text-dim:#96907e;
+  --accent:#ff7a5c;
+  --accent-dim:#3a231c;
+  --danger:#ff7a5c;
+  --danger-dim:#3a221b;
+  --warn:#dcae57;
+  --warn-bg:#2f2712;
+  --ink:#e9e6dd;
+  --ink-2:#151619;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.3);
+}
+
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size:15.5px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  font-feature-settings:"tnum" 1;
+}
+
+.app{display:flex;min-height:100vh;}
+
+/* ---- Sidebar: table-of-contents for the document set ---- */
+.sidebar{
+  width:270px;
+  flex-shrink:0;
+  background:var(--ink-2);
+  border-right:1px solid var(--border);
+  display:flex;
+  flex-direction:column;
+  position:sticky;
+  top:0;
+  height:100vh;
+  overflow-y:auto;
+  transition:transform .2s ease;
+  z-index:20;
+}
+.sidebar-head{
+  padding:22px 20px 16px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.brand{display:flex;align-items:center;gap:11px;}
+.brand-mark{
+  width:34px;height:34px;border-radius:8px;
+  overflow:hidden;flex-shrink:0;
+  border:1px solid rgba(255,255,255,.1);
+}
+.brand-mark img{width:100%;height:100%;object-fit:cover;display:block;}
+.brand-text .t1{
+  font-family:"Sora",sans-serif;
+  font-weight:600;font-size:15px;color:#f6f3ea;
+}
+.brand-text .t2{
+  font-size:11px;color:#948e7c;margin-top:2px;
+}
+
+.nav{padding:16px 12px 12px;flex:1;}
+.nav-item{
+  display:flex;align-items:flex-start;gap:10px;
+  width:100%;
+  padding:9px 10px;
+  border-radius:var(--radius-sm);
+  border:none;
+  background:transparent;
+  color:#c4bfaf;
+  font-size:13.5px;
+  line-height:1.4;
+  text-align:left;
+  cursor:pointer;
+  margin-bottom:1px;
+  transition:background .12s ease, color .12s ease;
+}
+.nav-item:hover{background:rgba(255,255,255,.05);color:#f6f3ea;}
+.nav-item.active{background:rgba(171,47,28,.22);color:#ffb199;font-weight:600;}
+.nav-icon{font-size:14px;width:18px;text-align:center;flex-shrink:0;margin-top:1px;}
+.nav-item .nlabel{flex:1;min-width:0;}
+
+.sidebar-foot{
+  padding:13px 18px 18px;
+  border-top:1px solid rgba(255,255,255,.08);
+  font-size:11px;
+  line-height:1.55;
+  color:#7c7768;
+}
+
+/* ---- Main ---- */
+.main{flex:1;min-width:0;display:flex;flex-direction:column;}
+.topbar{
+  position:sticky;top:0;z-index:10;
+  background:var(--bg);
+  border-bottom:1px solid var(--border);
+  padding:17px 34px;
+  display:flex;align-items:center;gap:12px;
+}
+.menu-toggle{
+  display:none;
+  border:1px solid var(--border);
+  background:var(--panel);
+  border-radius:var(--radius-sm);
+  width:36px;height:36px;
+  align-items:center;justify-content:center;
+  cursor:pointer;color:var(--text);font-size:16px;
+}
+.page-title{
+  font-family:"Sora",sans-serif;
+  font-size:19px;font-weight:600;flex:1;min-width:0;
+}
+.page-title .sub{
+  display:block;font-family:"Inter",sans-serif;
+  font-size:12.5px;font-weight:400;color:var(--text-dim);margin-top:3px;
+}
+
+.btn{
+  border:1px solid var(--border);
+  background:var(--panel);
+  color:var(--text);
+  padding:8px 14px;
+  border-radius:var(--radius-sm);
+  font-size:13px;
+  font-weight:500;
+  cursor:pointer;
+  display:inline-flex;align-items:center;gap:6px;
+  transition:border-color .12s ease, background .12s ease, filter .12s ease;
+  white-space:nowrap;
+}
+.btn:hover{border-color:#b9b19a;background:var(--panel-2);}
+:root[data-theme="dark"] .btn:hover, :root:not([data-theme="light"]) .btn:hover{filter:brightness(1.15);}
+.btn-accent{background:var(--accent);border-color:var(--accent);color:#fdf6f3;font-weight:600;}
+.btn-accent:hover{filter:brightness(1.06);background:var(--accent);}
+.btn-danger{background:transparent;border-color:var(--border);color:var(--danger);}
+.btn-danger:hover{border-color:var(--danger);background:var(--danger-dim);}
+.btn-danger.solid{background:var(--danger);color:#fdf6f3;border-color:var(--danger);}
+.btn-ghost{background:transparent;border-color:transparent;}
+.btn:disabled{opacity:.45;cursor:not-allowed;}
+
+.content{
+  padding:0 34px 80px;
+  max-width:740px;
+  width:100%;
+  margin:0 auto;
+  display:flex;
+  flex-direction:column;
+}
+
+/* ---- Document meta strip: classification + reference, not a banner ---- */
+.doc-meta{
+  display:flex;flex-wrap:wrap;align-items:center;gap:5px 14px;
+  padding:16px 0 18px;
+  border-bottom:1px solid var(--border);
+  margin-bottom:26px;
+}
+.doc-classification{
+  font-size:11.5px;font-weight:600;color:var(--accent);
+  letter-spacing:.01em;
+}
+.doc-ref{
+  font-size:11.5px;color:var(--text-dim);
+}
+.doc-ref:empty{display:none;}
+.doc-ref::before{content:"·";margin-right:14px;color:var(--border);}
+.doc-classification:only-child + .doc-ref::before,
+.doc-ref:first-child::before{content:none;margin:0;}
+
+.banner{
+  display:flex;gap:10px;align-items:flex-start;
+  background:var(--warn-bg);
+  border:1px solid transparent;
+  color:var(--warn);
+  padding:11px 15px;
+  border-radius:var(--radius-sm);
+  font-size:13px;
+  margin:16px 0 0;
+  order:-1;
+}
+.banner b{color:inherit;}
+
+.edit-banner{
+  display:none;
+  align-items:center;gap:8px;
+  background:var(--accent-dim);
+  color:var(--accent);
+  border:1px solid transparent;
+  padding:10px 15px;border-radius:var(--radius-sm);
+  font-size:13px;font-weight:600;
+  margin-bottom:20px;
+}
+.edit-banner.show{display:flex;}
+
+/* ---- Sections: continuous document flow, clause by clause ---- */
+#sections{display:flex;flex-direction:column;}
+.section-card{
+  background:transparent;
+  border:none;
+  border-top:1px solid var(--border);
+  border-radius:0;
+  padding:26px 0 4px;
+  margin-bottom:0;
+  box-shadow:none;
+  position:relative;
+}
+.section-card:first-child{border-top:none;padding-top:0;}
+.section-head{display:flex;align-items:flex-start;gap:10px;margin-bottom:11px;}
+.section-heading{
+  font-family:"Sora",sans-serif;
+  font-size:16.5px;font-weight:600;flex:1;min-width:0;
+  outline:none;
+}
+.section-heading[contenteditable="true"]{
+  background:var(--panel-2);
+  border-radius:6px;
+  padding:2px 6px;
+  margin:-2px -6px;
+}
+.section-body{font-size:15px;color:var(--text);outline:none;}
+.section-body[contenteditable="true"]{
+  background:var(--panel-2);
+  border-radius:8px;
+  padding:8px 10px;
+}
+.section-body p{margin:0 0 11px;}
+.section-body ul,.section-body ol{margin:0 0 11px;padding-left:20px;}
+.section-body li{margin-bottom:6px;}
+.section-body strong{color:var(--text);}
+.section-body .q{font-weight:600;margin:16px 0 5px;color:var(--text);}
+.section-body .q:first-child{margin-top:0;}
+.section-body table{
+  width:100%;border-collapse:collapse;font-size:13.5px;margin:12px 0 16px;
+  display:block;overflow-x:auto;
+  font-feature-settings:"tnum" 1;
+}
+.section-body th,.section-body td{
+  border:1px solid var(--border);
+  padding:8px 11px;text-align:left;vertical-align:top;
+}
+.section-body th{background:var(--panel-2);font-weight:600;color:var(--text-dim);}
+.section-body .tag{
+  display:inline-block;font-size:11px;font-weight:600;
+  padding:2px 9px;border-radius:20px;margin-right:6px;
+}
+.tag-active{background:#e2f2e3;color:#1f7a3d;}
+.tag-inactive{background:var(--panel-2);color:var(--text-dim);}
+:root[data-theme="dark"] .tag-active,:root:not([data-theme="light"]) .tag-active{background:#1c3721;color:#7fd489;}
+:root[data-theme="dark"] .tag-inactive,:root:not([data-theme="light"]) .tag-inactive{background:var(--panel-2);color:var(--text-dim);}
+
+.section-tools{
+  display:none;
+  gap:6px;flex-shrink:0;
+}
+.section-tools.show{display:flex;}
+.icon-btn{
+  border:1px solid var(--border);background:var(--panel-2);color:var(--text-dim);
+  width:27px;height:27px;border-radius:var(--radius-sm);cursor:pointer;
+  display:flex;align-items:center;justify-content:center;font-size:13px;
+}
+.icon-btn.del{color:var(--danger);}
+.icon-btn:hover{color:var(--text);}
+.icon-btn.del:hover{background:var(--danger-dim);color:var(--danger);}
+
+.add-section-btn{
+  display:none;
+  width:100%;
+  padding:13px;
+  border:1.5px dashed var(--border);
+  border-radius:var(--radius);
+  background:transparent;
+  color:var(--text-dim);
+  font-size:13px;font-weight:500;
+  cursor:pointer;
+  margin-top:20px;
+}
+.add-section-btn.show{display:block;}
+.add-section-btn:hover{border-color:var(--accent);color:var(--accent);}
+
+.empty-state{
+  text-align:center;padding:60px 20px;color:var(--text-dim);
+}
+.empty-state .e-ico{font-size:34px;margin-bottom:10px;}
+
+.toast{
+  position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(20px);
+  background:var(--ink-2);color:#f6f3ea;
+  padding:10px 18px;border-radius:30px;font-size:13px;font-weight:600;
+  opacity:0;pointer-events:none;transition:opacity .2s ease, transform .2s ease;
+  z-index:100;box-shadow:0 6px 20px rgba(0,0,0,.2);
+}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+
+.overlay{
+  display:none;position:fixed;inset:0;background:rgba(18,16,13,.5);z-index:15;
+}
+.overlay.show{display:block;}
+
+.loading-overlay{
+  display:none;position:fixed;inset:0;z-index:200;
+  background:var(--bg);
+  align-items:center;justify-content:center;
+  flex-direction:column;gap:14px;
+  color:var(--text-dim);font-size:13.5px;font-weight:500;
+}
+.loading-overlay.show{display:flex;}
+.spinner{
+  width:26px;height:26px;border-radius:50%;
+  border:3px solid var(--border);border-top-color:var(--accent);
+  animation:spin .8s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg);}}
+
+.source-note{display:none;} /* replaced by .doc-ref in the meta strip */
+
+@media (max-width:860px){
+  .sidebar{
+    position:fixed;left:0;top:0;bottom:0;
+    transform:translateX(-100%);
+    box-shadow:0 0 26px rgba(0,0,0,.28);
+  }
+  .sidebar.open{transform:translateX(0);}
+  .menu-toggle{display:flex;}
+  .content{padding:0 16px 60px;}
+  .topbar{padding:13px 16px;flex-wrap:wrap;}
+  .page-title{width:100%;order:1;}
+  .btn{order:2;}
+  .doc-meta{padding:13px 0 15px;margin-bottom:20px;}
+}
+</style>
+</head>
+<body>
+
+<div class="loading-overlay show" id="loadingOverlay">
+  <div class="spinner"></div>
+  <div>Memuat data…</div>
+</div>
+
+<div class="app">
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-head">
+      <div class="brand">
+        <div class="brand-mark"><img src="data:image/png;base64,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" alt="Parkee"></div>
+        <div class="brand-text">
+          <div class="t1">Parkee CS Hub</div>
+          <div class="t2">Knowledge base internal</div>
+        </div>
+      </div>
+    </div>
+    <nav class="nav" id="nav"></nav>
+    <div class="sidebar-foot">Perubahan tersimpan ke database bersama — terlihat sama di semua perangkat yang membuka situs ini.</div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      <div class="page-title" id="pageTitle"></div>
+      <button class="btn" id="editBtn">✎ Edit</button>
+      <button class="btn btn-accent" id="saveBtn" style="display:none;">💾 Save</button>
+      <button class="btn btn-danger" id="pageDeleteBtn">🗑 Hapus</button>
+    </div>
+
+    <div class="content" id="content">
+      <div class="banner" id="configBanner" style="display:none;border-color:rgba(229,72,77,.3);background:var(--danger-dim);color:var(--danger);">
+        ⚠️ <span><b>Supabase belum dikonfigurasi.</b> Data saat ini hanya tampil dari isi bawaan dan TIDAK tersimpan/bersama antar perangkat. Isi <code>SUPABASE_URL</code> dan <code>SUPABASE_ANON_KEY</code> di bagian atas &lt;script&gt; pada file HTML ini (lihat komentar setup di dalamnya), lalu deploy ulang.</span>
+      </div>
+      <div class="doc-meta">
+        <span class="doc-classification" id="warnBanner">🔒 Dokumen internal — tidak untuk dibagikan tanpa persetujuan Manager CS</span>
+        <span class="doc-ref" id="sourceNote"></span>
+      </div>
+      <div class="edit-banner" id="editBanner">✎ Mode edit aktif — klik teks untuk mengubah, gunakan ✕ untuk hapus section, lalu tekan Save.</div>
+      <div id="sections"></div>
+      <button class="add-section-btn" id="addSectionBtn">+ Tambah Section</button>
+    </div>
+  </main>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script type="module">
+/* =========================================================================
+   PENYIMPANAN BERSAMA (Supabase) — supaya semua orang/perangkat yang buka
+   situs ini melihat data yang SAMA (bukan localStorage per-HP).
+
+   CARA SETUP (±3 menit, pakai project Supabase yang sudah ada):
+   1. Di dashboard Supabase project kamu, buka "SQL Editor" → jalankan:
+
+        create table parkee_cs_hub_pages (
+          id text primary key,
+          data jsonb not null,
+          updated_at timestamptz default now()
+        );
+
+        alter table parkee_cs_hub_pages enable row level security;
+
+        create policy "public read" on parkee_cs_hub_pages
+          for select using (true);
+
+        create policy "public write" on parkee_cs_hub_pages
+          for insert with check (true);
+
+        create policy "public update" on parkee_cs_hub_pages
+          for update using (true);
+
+   2. Buka menu "Project Settings" → "API" → copy "Project URL" dan
+      "anon public" key.
+   3. Tempel nilainya ke SUPABASE_URL dan SUPABASE_ANON_KEY di bawah ini.
+   4. Simpan file ini, lalu upload/deploy ke GitHub Pages seperti biasa.
+      Semua orang yang buka situsnya sekarang berbagi database yang sama.
+
+   CATATAN KEAMANAN:
+   Policy di atas membuat baca+tulis TERBUKA untuk siapa saja yang tahu
+   URL & anon key (keduanya memang publik/terlihat di source HTML, itu
+   wajar untuk app Supabase client-side). Karena file ini dokumen internal,
+   itu mungkin cukup — tapi kalau mau dibatasi, sesuaikan policy RLS di
+   atas (mis. batasi write). Password edit di bawah ini HANYA penghalang
+   ringan, bukan keamanan sesungguhnya, karena kode & password terlihat di
+   "view source".
+   ========================================================================= */
+
+const SUPABASE_URL = "https://jegvufypvzbtrihvqpzu.supabase.co";
+const SUPABASE_ANON_KEY = "sb_publishable_hTrV939MPHFs_OiqkMBiyQ_fG6jmhUy";
+const TABLE_NAME = "parkee_cs_hub_pages";
+
+// Ganti password ini kalau mau — dipakai sebagai penghalang ringan sebelum
+// masuk mode edit (BUKAN keamanan sungguhan, lihat catatan di atas).
+const EDIT_PASSWORD = "parkee2026";
+
+let supabase = null;
+let firebaseReady = false; // nama variabel dipertahankan supaya sisa kode di bawah tidak perlu diubah
+
+async function initFirebase(){
+  if(SUPABASE_URL.startsWith("ISI_") || SUPABASE_ANON_KEY.startsWith("ISI_")){
+    firebaseReady = false;
+    return;
+  }
+  try{
+    const { createClient } = await import("https://esm.sh/@supabase/supabase-js@2");
+    supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    firebaseReady = true;
+  }catch(e){
+    console.error("Supabase init gagal:", e);
+    firebaseReady = false;
+  }
+}
+
+/* ---------- Default content, built from the 6 source pages ---------- */
+const DEFAULT_PAGES = {
+
+  "wuzz": {
+    title: "FAQ Share My Wuzz",
+    subtitle: "Fitur berbagi akses Wuzz ke anggota keluarga / second user",
+    icon: "🔗",
+    source: "Sumber: PRD Share My Wuzz — nurarif-png.github.io/FAQ-Share-my-wuzz",
+    sections: [
+      { heading: "01. Tentang Fitur", html: `
+        <p class="q">Apa itu fitur Share My Wuzz?</p>
+        <p>Fitur yang memungkinkan pemilik Wuzz membagikan akses penggunaan satu sticker Wuzz ke orang lain (misalnya anggota keluarga) yang memakai kendaraan yang sama. Saat kendaraan keluar lewat gate non-Wuzz, orang yang diberi akses tetap bisa menggunakan QR exit tanpa harus jadi pemilik Wuzz.</p>
+        <p class="q">Siapa saja pihak yang terlibat?</p>
+        <ul>
+          <li><strong>Owner</strong> — pemilik Wuzz yang membagikan akses.</li>
+          <li><strong>Member / Family Member / Second User</strong> — pihak yang menerima akses berbagi dari Owner.</li>
+        </ul>`
+      },
+      { heading: "02. Cara Penggunaan — Owner", html: `
+        <p><strong>Tutorial untuk Owner: cara membagikan Wuzz</strong></p>
+        <ol>
+          <li>Pastikan status Wuzz Aktif (tidak nonaktif / menunggu aktivasi).</li>
+          <li>Buka halaman detail kendaraan Wuzz yang ingin dibagikan.</li>
+          <li>Tekan tombol <strong>Share My Wuzz</strong>.</li>
+          <li>Jika pertama kali, setujui Syarat &amp; Ketentuan di bottom sheet (cukup sekali).</li>
+          <li>Masukkan nomor telepon PARKEE penerima — manual atau dari kontak HP (maks. 10 anggota per Wuzz).</li>
+          <li>Tekan <strong>Send Invitations</strong>. Undangan kedaluwarsa otomatis dalam 24 jam jika tidak direspons.</li>
+          <li>Setelah diterima (Accept), owner mendapat notifikasi dan Wuzz mulai dibagikan.</li>
+        </ol>
+        <p>Untuk mengelola anggota (ganti Default Paying User, stop akses, undang ulang), tekan tombol "Sharing with X people" di halaman detail Wuzz.</p>`
+      },
+      { heading: "03. Cara Penggunaan — Member", html: `
+        <p><strong>Tutorial untuk Member: menerima &amp; menggunakan Wuzz yang dibagikan</strong></p>
+        <ol>
+          <li>Sudah punya akun PARKEE dengan minimal satu e-wallet tersambung.</li>
+          <li>Terima push notification / notifikasi lonceng "Share My Wuzz".</li>
+          <li>Tekan notifikasi untuk membuka halaman Wuzz Sharing Request (lihat nomor Wuzz, nomor kendaraan, jenis Tag, batas waktu).</li>
+          <li>Tekan <strong>Accept</strong> atau <strong>Decline</strong>.</li>
+          <li>Setelah diterima, Wuzz muncul di daftar kendaraan dengan ikon "shared".</li>
+          <li>Bisa dipakai seperti biasa, termasuk melihat (tidak mengubah) pengaturan Auto Approve/Auto Pay/LPR dan riwayat transaksi sendiri.</li>
+          <li>Untuk berhenti, tekan <strong>Leave Access</strong> di halaman detail lalu konfirmasi.</li>
+        </ol>
+        <p>Member tidak wajib jadi pembayar. Selama Auto Approve menyala, pembayaran dibebankan ke Default Paying User kecuali member mengganti metode pembayaran ke miliknya sebelum keluar gate.</p>`
+      },
+      { heading: "04. FAQ Owner", html: `
+        <p class="q">Syarat agar bisa membagikan Wuzz?</p>
+        <p>Status Wuzz owner Aktif, dan Wuzz terdaftar atas nama owner sendiri.</p>
+        <p class="q">Bagaimana cara membagikan Wuzz ke anggota lain?</p>
+        <ol>
+          <li>Masuk ke halaman detail kendaraan Wuzz.</li>
+          <li>Tekan tombol Share My Wuzz.</li>
+          <li>Untuk pertama kali menekan tombol ini, akan muncul bottom sheet Syarat &amp; Ketentuan yang harus disetujui — persetujuan ini hanya berlaku sekali, tidak akan muncul lagi meski owner punya lebih dari satu Wuzz.</li>
+          <li>Setelah itu masuk ke halaman input nomor telepon — nomor bisa diketik manual atau dipilih dari kontak di HP.</li>
+          <li>Tekan Send Invitation setelah minimal satu nomor berhasil dimasukkan.</li>
+        </ol>
+        <p class="q">Maksimal berapa orang per Wuzz?</p>
+        <p>Maksimal 10 orang untuk satu Wuzz (gabungan anggota aktif dan yang masih menunggu konfirmasi/pending).</p>
+        <p class="q">Kenapa nomor telepon gagal / error?</p>
+        <ul>
+          <li>Belum terdaftar di PARKEE.</li>
+          <li>Sudah terdaftar tapi belum ada e-wallet tersambung.</li>
+          <li>Versi aplikasi terlalu lama.</li>
+          <li>Nomor sudah pernah diundang (pending) / sudah jadi anggota aktif.</li>
+          <li>Owner memasukkan nomornya sendiri.</li>
+          <li>Owner sudah punya 10 anggota.</li>
+        </ul>
+        <p class="q">Apa itu Default Paying User &amp; cara menggantinya?</p>
+        <p>Pengguna yang dibebankan pembayaran saat Auto Approve menyala (default: owner). Ganti lewat titik tiga di sebelah nama pada halaman Sharing List.</p>
+        <p class="q">Apakah owner mendapat notifikasi setelah berhasil mengirim undangan?</p>
+        <p>Owner tidak menerima push notification saat undangan berhasil dikirim — hanya muncul konfirmasi "Invitations Shared!" di dalam aplikasi. Undangan otomatis kedaluwarsa dalam 24 jam jika tidak direspons.</p>
+        <p class="q">Bagaimana cara melihat siapa saja yang sudah diundang atau sudah aktif berbagi Wuzz?</p>
+        <p>Tekan tombol yang berubah menjadi "Sharing with X people" pada halaman detail Wuzz. Ini membuka halaman Sharing List, yang menampilkan bagian Wuzz Owner dan bagian Sharing With (anggota aktif dan yang masih pending).</p>
+        <p class="q">Cara menghentikan akses anggota?</p>
+        <p>Titik tiga di samping nama anggota → Stop Sharing → konfirmasi. Undangan pending bisa dibatalkan dari halaman yang sama.</p>
+        <p class="q">Apakah owner diberi tahu saat anggota menerima/menolak undangan atau berhenti berbagi sendiri?</p>
+        <p>Ya. Owner akan mendapat push notification saat: anggota menerima undangan, anggota menolak undangan (manual maupun otomatis karena kedaluwarsa 24 jam), dan anggota menghentikan sendiri (unsync) akses berbaginya.</p>`
+      },
+      { heading: "05. FAQ Member", html: `
+        <p class="q">Syarat menerima berbagi Wuzz?</p>
+        <p>Sudah punya akun PARKEE dengan minimal satu e-wallet tersambung.</p>
+        <p class="q">Bagaimana cara menerima undangan berbagi Wuzz?</p>
+        <p>Menekan notifikasi mengarahkan ke halaman Wuzz Sharing Request (menampilkan waktu kedaluwarsa, nomor Wuzz, nomor kendaraan, jenis Tag), lalu bisa menekan Accept atau Decline.</p>
+        <p class="q">Berapa lama undangan berlaku sebelum hangus?</p>
+        <p>24 jam sejak dikirim. Jika tidak direspons, otomatis ditolak (auto decline).</p>
+        <p class="q">Setelah menerima undangan, apa yang bisa dilakukan anggota?</p>
+        <ul>
+          <li>Wuzz muncul di daftar kendaraan anggota, ditandai ikon "shared" yang menunjukkan Wuzz bukan miliknya sendiri.</li>
+          <li>Bisa melihat pengaturan Wuzz (Auto Approve, Auto Pay, LPR) — status ON/OFF, tapi tidak bisa mengubahnya.</li>
+          <li>Bisa melihat siapa Default Paying User saat ini.</li>
+          <li>Bisa mengakses riwayat penggunaan (Wuzz Usage History) milik transaksinya sendiri.</li>
+          <li>Bisa berhenti berbagi sendiri (unsync) kapan saja lewat tombol Leave Access.</li>
+        </ul>
+        <p class="q">Bisakah member mengubah pengaturan Wuzz?</p>
+        <p>Tidak — hanya owner yang berhak mengatur Auto Approve, Auto Pay, LPR, dan aktif/nonaktif Wuzz.</p>
+        <p class="q">Bagaimana cara berhenti menjadi anggota berbagi (unsync)?</p>
+        <p>Buka halaman detail Wuzz yang dibagikan, tekan tombol Leave Access, lalu konfirmasi pada bottom sheet yang muncul. Anggota akan diarahkan ke homepage dan kehilangan akses ke Wuzz tersebut.</p>
+        <p class="q">Apakah pemilik (owner) akan tahu jika saya berhenti berbagi sendiri?</p>
+        <p>Ya, owner akan mendapat push notification bahwa anggota tersebut telah menghentikan sendiri (unsync) akses berbagi Wuzz.</p>
+        <p class="q">Apa yang terjadi jika owner menghapus member dari daftar berbagi?</p>
+        <p>Member langsung kehilangan akses ke Wuzz tersebut dan menerima push notification bahwa akses berbaginya telah dihapus oleh owner.</p>`
+      },
+      { heading: "06. Transaksi & Pembayaran Bersama", html: `
+        <p class="q">Siapa yang membayar saat Wuzz dipakai bersama?</p>
+        <ul>
+          <li><strong>Auto Approve ON</strong> — dibebankan ke Default Paying User, kecuali pengguna lain mengganti metode pembayaran sebelum keluar gate.</li>
+          <li><strong>Auto Approve OFF</strong> — siapa pun yang lebih dulu menekan Allow pada exit confirmation.</li>
+        </ul>
+        <p class="q">Bagaimana jika saldo Default Paying User tidak cukup?</p>
+        <p>Hanya Default Paying User yang menerima notifikasi saldo kurang; pengguna lain tetap bisa membayar dengan mengganti metode pembayarannya sendiri.</p>
+        <p class="q">Bisakah member memakai kupon miliknya sendiri?</p>
+        <p>Bisa, hanya jika sedang berstatus pembayar untuk transaksi tersebut. Jika kupon dari agent sudah diterapkan, field kupon terkunci sampai transaksi selesai.</p>
+        <p class="q">Apakah anggota tetap bisa memakai Wuzz jika pemilik menonaktifkan, Wuzz diblokir, atau akun owner dihapus?</p>
+        <ul>
+          <li><strong>Wuzz dinonaktifkan (deactivate)</strong> — tetap muncul di daftar kendaraan anggota, tapi tidak bisa digunakan.</li>
+          <li><strong>Wuzz diblokir atau akun owner dihapus</strong> — Wuzz akan hilang sepenuhnya dari daftar kendaraan anggota.</li>
+        </ul>
+        <p class="q">Riwayat transaksi member tercatat di riwayat owner?</p>
+        <p>Ya, termasuk struk pembayaran dan data member yang membayar, ditampilkan untuk 6 bulan terakhir.</p>`
+      },
+      { heading: "Catatan Dokumen", html: `
+        <p>Dokumen internal — disusun dari PRD "Share My Wuzz" (status Draft) untuk referensi tim Product/CS. Cakupan FAQ ini terbatas pada alur pemakaian aplikasi (owner &amp; member); bagian CMS, kasus hapus akun, dan edge case teknis lain tidak disertakan di sini. Perbarui bila PRD berubah atau fitur sudah rilis final.</p>`
+      },
+    ]
+  },
+
+  "qris": {
+    title: "FAQ QRIS Tap In Tap Out",
+    subtitle: "Check-in, check-out, dan pembayaran parkir via NFC tap",
+    icon: "📶",
+    source: "Berlaku sejak 30 Oktober 2025 — nurarif-png.github.io/FAQ-QRIS-TAP-IN-OUT",
+    sections: [
+      { heading: "01. Tentang Fitur", html: `
+        <p class="q">Apa itu QRIS Tap In Tap Out?</p>
+        <p>Metode yang memungkinkan satu tap NFC dari aplikasi payment online sekaligus berfungsi sebagai check-in, check-out, <strong>dan</strong> metode pembayaran parkir — tanpa tiket fisik atau QR terpisah.</p>
+        <p class="q">Sejak kapan dan untuk siapa?</p>
+        <p>Berlaku untuk seluruh pengguna sejak <strong>30 Oktober 2025</strong>, via aplikasi payment online yang mendukung QRIS Tap dari HP/smartwatch <strong>Android</strong>.</p>
+        <p class="q">Syarat perangkat?</p>
+        <ul>
+          <li>Perangkat Android (HP/smartwatch) yang mendukung NFC.</li>
+          <li>NFC dalam kondisi ON sebelum tap di gate.</li>
+          <li>Sudah punya aplikasi payment online yang mendukung QRIS Tap.</li>
+        </ul>
+        <p class="q">Aplikasi yang sudah mendukung?</p>
+        <p>myBCA, GoPay, ShopeePay, DANA, Livin' by Mandiri, dan beberapa aplikasi lain yang mendukung QRIS Tap.</p>`
+      },
+      { heading: "02. Cara Penggunaan", html: `
+        <ol>
+          <li>Pastikan NFC di HP/smartwatch Android sudah ON.</li>
+          <li>Buka aplikasi payment online pendukung QRIS Tap.</li>
+          <li>Tap perangkat ke reader di gate masuk untuk check-in.</li>
+          <li>Saat keluar, tap yang sama di gate keluar — sistem otomatis check-out sekaligus proses pembayaran.</li>
+        </ol>
+        <p>Video contoh alur transaksi QRIS Tap In Tap Out tersedia di dokumen sumber untuk referensi visual tim CS.</p>
+        <p class="q">Perlu aplikasi PARKEE?</p>
+        <p>Tidak — QRIS Tap dilakukan langsung dari aplikasi payment online pelanggan, selama transaksinya berjenis casual.</p>`
+      },
+      { heading: "03. Lokasi Aktif", html: `
+        <table>
+          <tr><th>Status</th><th>Lokasi</th><th>Keterangan</th></tr>
+          <tr><td><span class="tag tag-active">AKTIF</span></td><td>Optik Melawai Salemba</td><td>Sejak 24 Okt 2025 — hanya gate bawah.</td></tr>
+          <tr><td><span class="tag tag-inactive">TIDAK AKTIF</span></td><td>Tamansari Hive Cawang</td><td>Sempat aktif sejak 27 Nov 2025, take out per 30 Des 2025.</td></tr>
+          <tr><td><span class="tag tag-active">AKTIF</span></td><td>Dharmawangsa Square</td><td>Aktif sejak 5 Jan 2025.</td></tr>
+          <tr><td><span class="tag tag-active">AKTIF</span></td><td>Aeropolis</td><td>Aktif sejak 18 Feb 2026.</td></tr>
+          <tr><td><span class="tag tag-active">AKTIF (bertahap)</span></td><td>Grand Indonesia</td><td>Aktif sejak 4 Mei 2026 — East Mall, sebagian gate West Mall.</td></tr>
+        </table>
+        <p>Status lokasi bisa berubah sewaktu-waktu — selalu cek dokumen sumber sebelum menyampaikan info ke pelanggan.</p>`
+      },
+      { heading: "04. Batasan", html: `
+        <p class="q">Jenis transaksi yang didukung?</p>
+        <p>Hanya transaksi <strong>casual</strong>.</p>
+        <p class="q">Bisa untuk transaksi member?</p>
+        <p>Tidak bisa.</p>
+        <p class="q">Bisa untuk fastlane / nested?</p>
+        <p>Belum didukung.</p>`
+      },
+      { heading: "Catatan Dokumen", html: `
+        <p>Dokumen internal — disusun untuk referensi tim Product/CS terkait fitur QRIS Tap In Tap Out. Cakupan terbatas pada info umum, cara pakai, lokasi aktif, dan batasan transaksi. Perbarui bila ada perubahan lokasi atau cakupan fitur.</p>`
+      },
+    ]
+  },
+
+  "kompensasi": {
+    title: "SOP & FAQ Kompensasi Hard Complain",
+    subtitle: "Pemberian kompensasi/kupon untuk keluhan kategori Hard Complain",
+    icon: "🎟️",
+    source: "Rujukan: Framework Pengelolaan Kompensasi Pelanggan (Hard Complain) PARKEE — nurarif-png.github.io/SOP-SLA-Kompensasi",
+    sections: [
+      { heading: "Ringkasan Kebijakan", html: `
+        <p>Mengatur pemberian kompensasi (kupon/voucher) kepada pengguna PARKEE dengan keluhan kategori <strong>Hard Complain</strong>. Tujuannya menjaga kepercayaan pengguna dan menekan risiko rating/review negatif.</p>
+        <p><strong>Prinsip utama:</strong> kompensasi hanya untuk Hard Complain, hasil evaluasi CS, dan disetujui lead terkait sebelum ditawarkan ke pengguna.</p>`
+      },
+      { heading: "Klasifikasi Komplain", html: `
+        <p><strong>Low</strong> — masalah kecil, selesai tanpa eskalasi khusus.</p>
+        <p><strong>Middle</strong> — perlu analisis/intervensi lebih kompleks dari penanganan standar.</p>
+        <p><strong>Hard</strong> — perlu penanganan khusus, bisa melibatkan perubahan besar/penggantian layanan, berisiko memicu rating/review negatif. <strong>Hanya kategori ini yang berhak kompensasi.</strong></p>`
+      },
+      { heading: "SOP Pemberian Kompensasi", html: `
+        <ol>
+          <li>Identifikasi Hard Complain — mis. keluhan berulang atau error aplikasi yang menghambat transaksi.</li>
+          <li>Verifikasi keluhan sesuai kriteria Hard Complain.</li>
+          <li>Evaluasi tingkat keparahan untuk menentukan jenis &amp; nilai kompensasi.</li>
+          <li>Jelaskan tindakan ke pelanggan, termasuk rencana kompensasi.</li>
+          <li>Konfirmasi &amp; ajukan ke lead — keputusan akhir ada di lead.</li>
+          <li>Tawarkan kompensasi/kupon setelah disetujui.</li>
+          <li>Sesuaikan nilai kupon sesuai tabel &amp; kebijakan.</li>
+          <li>Konfirmasi &amp; catat ke catatan pelanggan dan Gsheet terkait.</li>
+          <li>Tindak lanjut &amp; pantau kepuasan serta penggunaan kupon.</li>
+        </ol>`
+      },
+      { heading: "Tabel Nominal Kompensasi", html: `
+        <table>
+          <tr><th>Jenis Keluhan</th><th>Nominal</th></tr>
+          <tr><td>Gangguan layanan — server pusat / gangguan pembayaran</td><td>Rp10.000</td></tr>
+          <tr><td>Masalah teknis — bug / ketidaknyamanan aplikasi</td><td>Rp10.000</td></tr>
+          <tr><td>Special case — komplain berulang yang viral &amp; memicu rating buruk</td><td>&gt; Rp50.000</td></tr>
+        </table>
+        <p>Kompensasi di atas Rp50.000 wajib persetujuan lebih lanjut dari manajemen.</p>`
+      },
+      { heading: "FAQ", html: `
+        <p class="q">Siapa yang berhak dapat kompensasi?</p>
+        <p>Hanya pengguna dengan keluhan Hard Complain yang terdokumentasi jelas, terkait masalah teknis, pelayanan kurang memuaskan, atau pengalaman pengguna yang buruk. Low &amp; Middle tidak masuk skema ini.</p>
+        <p class="q">Bisa langsung ditawarkan CS?</p>
+        <p>Tidak — wajib evaluasi &amp; koordinasi dengan lead lebih dulu. Kompensasi hanya boleh ditawarkan setelah lead menyetujui, berdasarkan hasil evaluasi yang diajukan CS.</p>
+        <p class="q">Berapa nominal kompensasi yang diberikan?</p>
+        <p>Rp10.000 untuk gangguan layanan atau masalah teknis. Untuk special case — misalnya komplain berulang yang sudah viral — nominalnya bisa di atas Rp50.000, wajib persetujuan manajemen terlebih dahulu.</p>
+        <p class="q">Apa itu "special case"?</p>
+        <p>Komplain sama yang terjadi berulang dan sudah viral di media sosial, memicu pengguna lain berhenti pakai PARKEE atau rating/review buruk.</p>
+        <p class="q">Apa yang wajib disampaikan ke pelanggan?</p>
+        <p>Permintaan maaf, rincian kompensasi, dan penjelasan langkah perbaikan yang sudah/sedang diambil.</p>
+        <p class="q">Dicatat di mana?</p>
+        <p>Gsheet penerima kupon (kompensasi) dan Gsheet komplain (detail keluhan), sebagai bagian dari riwayat pelanggan.</p>
+        <p class="q">Apa tujuan pemberian kompensasi ini bagi PARKEE?</p>
+        <p>Memulihkan kepuasan pelanggan yang kecewa, mencegah kerugian reputasi, menunjukkan tanggung jawab PARKEE atas masalah yang dialami pengguna, dan pada akhirnya meningkatkan retensi pelanggan.</p>
+        <p class="q">Apakah ada pemantauan setelah kupon diberikan?</p>
+        <p>Ya. Tim CS melakukan tindak lanjut untuk memastikan pelanggan puas, dan perusahaan memantau penggunaan kupon untuk menganalisis dampaknya terhadap retensi dan kepuasan pelanggan.</p>`
+      },
+      { heading: "Catatan Dokumen", html: `
+        <p>Disusun berdasarkan dokumen "Framework Pengelolaan Kompensasi Pelanggan dengan Keluhan Keras (Hard Complain) PARKEE." Untuk pencatatan, gunakan Gsheet Penerima Kupon dan Gsheet Komplain sesuai proses internal tim CS.</p>`
+      },
+    ]
+  },
+
+  "sla-cs-refund": {
+    title: "SOP & SLA Customer Success + Refund",
+    subtitle: "Operasional, SLA, KPI, etika layanan, dan prosedur refund",
+    icon: "📋",
+    source: "Dokumen internal Parkee — nurarif-png.github.io/SOP-CS-SOP-REFUND",
+    sections: [
+      { heading: "1. Tujuan", html: `
+        <p>SOP ini disusun untuk menjadi pedoman operasional Tim Customer Success (CS) dalam memberikan layanan dukungan pelanggan yang profesional, konsisten, tepat waktu, serta sesuai dengan Service Level Agreement (SLA) yang berlaku di perusahaan.</p>`
+      },
+      { heading: "2. Ruang Lingkup", html: `
+        <ul>
+          <li>Operasional layanan Customer Success</li>
+          <li>Tugas dan tanggung jawab CS</li>
+          <li>SLA dan metrik kinerja</li>
+          <li>Proses eskalasi</li>
+          <li>Etika layanan pelanggan</li>
+          <li>Penanganan pengembalian dana (refund)</li>
+        </ul>`
+      },
+      { heading: "3. Definisi Layanan Customer Success", html: `
+        <p>Customer Success adalah tim yang bertanggung jawab memberikan dukungan kepada pelanggan melalui saluran komunikasi resmi perusahaan dengan pendekatan yang sopan, ramah, solutif, dan profesional.</p>
+        <p class="q">Saluran Komunikasi</p>
+        <ul>
+          <li>WhatsApp</li>
+          <li>Media sosial</li>
+          <li>Email</li>
+        </ul>
+        <p>📌 Seluruh komentar, pesan, dan review pelanggan wajib direspons sesuai SLA yang ditetapkan.</p>`
+      },
+      { heading: "4. Jam Operasional & Shift", html: `
+        <p>Operasional CS berjalan Senin – Minggu. Pembagian hari libur ditentukan oleh Leader dengan sistem rotasi.</p>
+        <table>
+          <tr><th>Shift</th><th>Jam Kerja</th></tr>
+          <tr><td>Pagi</td><td>08:00 – 17:00</td></tr>
+          <tr><td>Siang</td><td>11:00 – 20:00</td></tr>
+          <tr><td>Sore</td><td>14:00 – 23:00</td></tr>
+        </table>
+        <p>⏰ Pesan yang masuk di luar jam operasional akan ditangani pada hari berikutnya sesuai jam kerja, disertai penyampaian permohonan maaf atas keterlambatan respons.</p>`
+      },
+      { heading: "5. Standar Respons Layanan (SLA Operasional)", html: `
+        <ul>
+          <li>CS wajib merespons permintaan dukungan maksimal 1 x 24 jam kerja sejak pesan diterima.</li>
+          <li>Untuk tiket/percakapan aktif, target First Response Time maksimal 7 menit.</li>
+          <li>Jika membutuhkan pengecekan lanjutan dan belum ada umpan balik, CS wajib memberikan update status kepada pelanggan.</li>
+        </ul>
+        <table>
+          <tr><th>Jenis SLA</th><th>Target</th></tr>
+          <tr><td>First Response Time</td><td>≤ 7 menit</td></tr>
+          <tr><td>Respons Umum</td><td>≤ 1 x 24 jam kerja</td></tr>
+          <tr><td>Update Status</td><td>Wajib, jika belum ada kepastian</td></tr>
+        </table>`
+      },
+      { heading: "6. Tugas dan Tanggung Jawab Customer Success", html: `
+        <table>
+          <tr><th>No</th><th>Tugas</th><th>Penjelasan</th></tr>
+          <tr><td>1</td><td>Menangani pertanyaan & komplain</td><td>Sesuai SOP dan SLA perusahaan</td></tr>
+          <tr><td>2</td><td>Pencapaian KPI</td><td>Memastikan KPI tim & individu tercapai</td></tr>
+          <tr><td>3</td><td>Verifikasi data kendaraan</td><td>Minimal setiap hari, dalam kurun waktu 1 jam</td></tr>
+          <tr><td>4</td><td>Verifikasi data resi</td><td>Untuk Agen CS shift pagi</td></tr>
+          <tr><td>5</td><td>Input data sticker Wuzz</td><td>Untuk transaksi Agen CS shift malam</td></tr>
+        </table>`
+      },
+      { heading: "7. Metrik Kinerja (KPI Customer Success)", html: `
+        <p class="q">A. Customer Satisfaction (CSAT)</p>
+        <p>CSAT digunakan untuk mengukur tingkat kepuasan pelanggan terhadap layanan CS.</p>
+        <table>
+          <tr><th>Skala</th><th>Kategori</th></tr>
+          <tr><td>4 – 5</td><td>High CSAT Score</td></tr>
+          <tr><td>1 – 3</td><td>Low CSAT Score</td></tr>
+        </table>
+        <table>
+          <tr><th>Target</th><th>Indikator</th></tr>
+          <tr><td>≥ 4</td><td>Target CSAT Tim CS</td></tr>
+          <tr><td>≤ 7 min</td><td>First Response Time</td></tr>
+          <tr><td>≤ 24 jam</td><td>Penyelesaian Kasus</td></tr>
+          <tr><td>≤ 4 jam</td><td>Avg. Case Duration</td></tr>
+        </table>
+        <p>Pelaporan CSAT dilakukan secara mingguan atau bulanan sesuai kebutuhan.</p>
+        <p class="q">B. Response Time</p>
+        <table>
+          <tr><th>Indikator</th><th>Target</th></tr>
+          <tr><td>First Response Time</td><td>Maks. 7 menit</td></tr>
+          <tr><td>Average Response Time</td><td>Akumulasi mingguan/bulanan sesuai KPI</td></tr>
+        </table>
+        <p class="q">C. Case Duration</p>
+        <table>
+          <tr><th>Indikator</th><th>Target</th></tr>
+          <tr><td>Penyelesaian kasus</td><td>≤ 24 jam</td></tr>
+          <tr><td>Average Case Duration</td><td>Maks. 4 jam</td></tr>
+        </table>
+        <p>✅ Jika tidak ada tanggapan dari pelanggan dalam 10 menit, CS berhak menutup tiket.</p>`
+      },
+      { heading: "8. Prosedur Eskalasi", html: `
+        <table>
+          <tr><th>Tahapan</th><th>Ketentuan</th></tr>
+          <tr><td>Kondisi eskalasi</td><td>Kasus tidak terselesaikan atau ada hambatan</td></tr>
+          <tr><td>Batas waktu</td><td>Maks. 1 hari kerja sejak laporan diterima</td></tr>
+          <tr><td>Tujuan eskalasi</td><td>Tim/level yang lebih tinggi dalam organisasi</td></tr>
+        </table>`
+      },
+      { heading: "9–10. Standar Komunikasi, Pemantauan & Pelaporan", html: `
+        <p class="q">CS wajib:</p>
+        <ul>
+          <li>Menjaga komunikasi yang jelas, konsisten, dan informatif</li>
+          <li>Memberikan estimasi waktu penyelesaian</li>
+          <li>Mengonfirmasi ulang informasi yang kurang jelas</li>
+          <li>Menghindari asumsi dalam memberikan jawaban</li>
+        </ul>
+        <table>
+          <tr><th>Aktivitas</th><th>Ketentuan</th></tr>
+          <tr><td>Monitoring kinerja</td><td>Berdasarkan KPI dan SLA</td></tr>
+          <tr><td>Pelaporan</td><td>Dilakukan berkala</td></tr>
+          <tr><td>Feedback pelanggan</td><td>Ditanggapi sesuai kode etik layanan</td></tr>
+        </table>`
+      },
+      { heading: "11. Kode Etik Layanan Pelanggan", html: `
+        <table>
+          <tr><th>No</th><th>Prinsip</th><th>Penjelasan Singkat</th></tr>
+          <tr><td>1</td><td>Profesionalisme</td><td>Sikap, bahasa, dan perilaku profesional</td></tr>
+          <tr><td>2</td><td>Integritas</td><td>Jujur dan transparan</td></tr>
+          <tr><td>3</td><td>Empati</td><td>Ramah dan solutif</td></tr>
+          <tr><td>4</td><td>Kerahasiaan</td><td>Menjaga data pelanggan</td></tr>
+          <tr><td>5</td><td>Respons Tepat Waktu</td><td>Sesuai SLA</td></tr>
+          <tr><td>6</td><td>Komunikasi Efektif</td><td>Jelas dan mudah dipahami</td></tr>
+          <tr><td>7</td><td>Proaktif</td><td>Follow up hingga tuntas</td></tr>
+          <tr><td>8</td><td>Non-diskriminasi</td><td>Layanan adil dan setara</td></tr>
+          <tr><td>9</td><td>Menghargai Waktu</td><td>Efisien dan tepat</td></tr>
+          <tr><td>10</td><td>Konsistensi</td><td>Kualitas layanan stabil</td></tr>
+          <tr><td>11</td><td>Penyelesaian Konflik</td><td>Bijaksana dan tenang</td></tr>
+          <tr><td>12</td><td>Pengembangan Diri</td><td>Upgrade skill berkelanjutan</td></tr>
+        </table>`
+      },
+      { heading: "SOP Refund — Tujuan & Ruang Lingkup", html: `
+        <p>Mengatur tata cara Customer Success dalam menangani permintaan refund dari pelanggan maupun client/internal untuk memastikan transparansi, kecepatan, dan akurasi dalam proses pengembalian dana.</p>
+        <table>
+          <tr><th>Elemen</th><th>Uraian</th></tr>
+          <tr><td>Metode Pembayaran</td><td>Bank Transfer, Virtual Account (VA), E-Wallet (GoPay, OVO, ShopeePay, DANA, LinkAja), QRIS, Kartu Kredit</td></tr>
+          <tr><td>Jenis Produk</td><td>Membership, Parkee app, Quickbook, EV Charging dan Wuzz</td></tr>
+        </table>`
+      },
+      { heading: "A. Membership — Prosedur Pengecekan Double Pembayaran", html: `
+        <table>
+          <tr><th>No</th><th>Tahapan</th><th>Deskripsi</th></tr>
+          <tr><td>1</td><td>Pengajuan Refund</td><td>CS menerima permintaan refund dari pengguna.</td></tr>
+          <tr><td>2</td><td>Verifikasi Data</td><td>CS memeriksa data pengguna di CMS serta bukti transaksi.</td></tr>
+          <tr><td>3</td><td>Pengecekan Pembayaran</td><td>CS mengecek status pembayaran di dashboard Midtrans dan mencocokkan dengan bukti bayar.</td></tr>
+          <tr><td>4</td><td>Konfirmasi ke Midtrans</td><td>CS menghubungi Midtrans jika data CMS dan Midtrans tidak sesuai.</td></tr>
+          <tr><td>5</td><td>Keputusan Refund</td><td>Refund dilakukan jika pembayaran settle di Midtrans namun cancel di CMS dan pengguna telah mengajukan ulang.</td></tr>
+          <tr><td>6</td><td>Dokumentasi</td><td>Melampirkan bukti pembayaran double, data CMS, email Midtrans, dan data transaksi agen dari tim support.</td></tr>
+        </table>
+        <p class="q">Pengembalian dana (PARKEE)</p>
+        <table>
+          <tr><th>Metode Pembayaran</th><th>Estimasi Waktu</th><th>Tujuan Refund</th></tr>
+          <tr><td>E-Wallet (GoPay, OVO, ShopeePay, DANA, LinkAja, OCTOPAY)</td><td>3 x 24 jam*</td><td>Saldo E-Wallet</td></tr>
+          <tr><td>Bank Transfer & VA</td><td>1 hari kerja*</td><td>Saldo Refund</td></tr>
+          <tr><td>QRIS</td><td>15 hari kerja*</td><td>Akun Bank / E-Wallet</td></tr>
+          <tr><td>GoPay Later</td><td>3 x 24 jam*</td><td>GoPay Later</td></tr>
+          <tr><td>QRIS – Kartu Kredit</td><td>15 hari kerja*</td><td>Limit Kartu Kredit</td></tr>
+        </table>
+        <p class="q">Pengembalian dana (Eksternal)</p>
+        <table>
+          <tr><th>Metode Pembayaran</th><th>Estimasi Waktu</th><th>Tujuan Refund</th></tr>
+          <tr><td>Cash</td><td>Sesuai SOP lokasi</td><td>Biasanya cash</td></tr>
+          <tr><td>Card</td><td>14 hari kerja (proses oleh RC CP)</td><td>Rekening user sesuai data pada BA</td></tr>
+        </table>
+        <p>*️⃣ Tidak termasuk Sabtu, Minggu, dan hari libur. Refund melalui RC membutuhkan waktu hingga 14 hari kerja sejak pengajuan BA.</p>
+        <p class="q">Refund Beda Nama / Beda Rekening (khusus proses refund membership)</p>
+        <table>
+          <tr><th>Jenis Refund</th><th>Ketentuan</th></tr>
+          <tr><td>Perorangan beda nama</td><td>Surat kuasa ditandatangani pemilik akun atau kedua belah pihak</td></tr>
+          <tr><td>Perusahaan / PT</td><td>Kop surat resmi, bermaterai, ditandatangani pejabat lebih tinggi dan pemohon</td></tr>
+          <tr><td>PT ke Rekening Perorangan</td><td>Kop surat, bermaterai, ditandatangani pejabat lebih tinggi dan pemohon</td></tr>
+        </table>
+        <p class="q">Lampiran Surat Keterangan / Pernyataan</p>
+        <table>
+          <tr><th>Kondisi</th><th>Ketentuan</th></tr>
+          <tr><td>Nama akun ≠ rekening</td><td>Nama panggilan, bukan sesuai KTP</td></tr>
+          <tr><td>Pemilik akun sudah tidak bekerja</td><td>Surat manajemen parkir, kop surat, tanda tangan ops/manajemen, dalam surat cantumkan juga nomor KTP user/pemohon</td></tr>
+          <tr><td>Akun didaftarkan keluarga/kerabat</td><td>Surat kuasa, KTP pemilik akun, data lengkap penerima refund</td></tr>
+        </table>
+        <p class="q">Lampiran Wajib Refund Membership</p>
+        <ul>
+          <li>Foto bukti transfer bank</li>
+          <li>Foto buku tabungan / rekening koran (nama & nomor rekening)</li>
+        </ul>
+        <p class="q">Pengecualian Bank — Tidak memiliki buku tabungan</p>
+        <table>
+          <tr><th>Bank</th><th>Ketentuan</th></tr>
+          <tr><td>BCA Xpresi</td><td>Perlu panduan tambahan — cek dokumen sumber untuk link panduan terbaru</td></tr>
+          <tr><td>Jenius BTPN</td><td>Perlu panduan tambahan — cek dokumen sumber untuk link panduan terbaru</td></tr>
+        </table>`
+      },
+      { heading: "B. Parkee App — Prosedur Penanganan Refund", html: `
+        <table>
+          <tr><th>No</th><th>Proses</th><th>Deskripsi</th></tr>
+          <tr><td>1</td><td>Verifikasi Data</td><td>Memastikan keabsahan permintaan refund</td></tr>
+          <tr><td>2</td><td>Kronologi & Bukti</td><td>Meminta kronologi dan bukti pembayaran</td></tr>
+          <tr><td>3</td><td>Cek CMS</td><td>Mengecek transaksi dan kemungkinan double payment</td></tr>
+          <tr><td>4</td><td>Cek Agen</td><td>Memastikan jumlah transaksi tercatat</td></tr>
+          <tr><td>5</td><td>Pengajuan Refund</td><td>Refund diajukan jika transaksi double terverifikasi</td></tr>
+        </table>
+        <p class="q">Kebijakan Refund Double Bayar (berdasarkan metode bayar)</p>
+        <table>
+          <tr><th>No</th><th>Payment</th><th>Refund</th><th>PIC</th><th>Keterangan</th></tr>
+          <tr><td>1</td><td>Card vs Cash</td><td>Card/Cash</td><td>RC/CP</td><td>Data agen</td></tr>
+          <tr><td>2</td><td>Card vs Card</td><td>Card</td><td>RC/CP</td><td>Data agen</td></tr>
+          <tr><td>3</td><td>Cash vs Cash</td><td>Cash</td><td>Ops/CP</td><td>Data agen</td></tr>
+          <tr><td>4</td><td>Card vs QRIS</td><td>QRIS</td><td>Parkee</td><td>Data agen</td></tr>
+          <tr><td>5</td><td>Card vs E-Wallet</td><td>E-Wallet</td><td>Parkee</td><td>Data agen</td></tr>
+          <tr><td>6</td><td>Cash vs E-Wallet</td><td>E-Wallet/Cash</td><td>Parkee/Ops</td><td>Situasional, cash dikembalikan jika hanya 1 transaksi di CMS</td></tr>
+        </table>`
+      },
+      { heading: "C. Prosedur Refund Wuzz", html: `
+        <table>
+          <tr><th>No</th><th>Tahapan</th><th>Deskripsi</th></tr>
+          <tr><td>1</td><td>Verifikasi Data</td><td>Validasi data pelanggan di PARKEE/CMS</td></tr>
+          <tr><td>2</td><td>Screenshot Tiket</td><td>Screenshot digital tiket transaksi</td></tr>
+          <tr><td>3</td><td>Bukti Double Payment</td><td>Bukti pembayaran ganda</td></tr>
+          <tr><td>4</td><td>Koordinasi Support</td><td>Verifikasi transaksi di sistem</td></tr>
+          <tr><td>5</td><td>Pengajuan ke Finance</td><td>Refund diajukan sesuai SOP</td></tr>
+        </table>`
+      },
+      { heading: "D. Prosedur Refund Quickbook & EV", html: `
+        <p class="q">1. Quickbook</p>
+        <table>
+          <tr><th>Kasus</th><th>Prosedur</th></tr>
+          <tr><td>Double Booking</td><td>Verifikasi → lapor support → refund jika expired → BA jika ongoing & issue lokasi</td></tr>
+          <tr><td>Error Sistem</td><td>Verifikasi → lapor support → refund jika error terkonfirmasi & transaksi expired</td></tr>
+        </table>
+        <p class="q">2. QB & EV / EV Only — Kategori Boleh Refund</p>
+        <table>
+          <tr><th>Kategori</th><th>Ketentuan</th></tr>
+          <tr><td>Hardware</td><td>Rusak dalam ±20–60 menit setelah pembelian</td></tr>
+          <tr><td>System</td><td>Internet offline atau aplikasi error</td></tr>
+        </table>
+        <p>Prosedur: CS menghubungi WhatsApp Parkee x Bluecharge untuk pembuatan BA Refund Dana/Voucher.</p>
+        <p class="q">Kategori Tidak Bisa Refund</p>
+        <table>
+          <tr><th>Kategori</th><th>Ketentuan</th></tr>
+          <tr><td>Human Error</td><td>Kelalaian pelanggan, salah input, tidak membawa adapter kendaraan</td></tr>
+        </table>
+        <p class="q">Kebijakan Tarif & KWh</p>
+        <table>
+          <tr><th>Ketentuan</th><th>Uraian</th></tr>
+          <tr><td>Tarif & KWh sesuai</td><td>Tidak dapat direfund jika sudah sesuai dan disetujui pelanggan</td></tr>
+        </table>
+        <p>🔌 Refund EV Charging lintas bulan wajib melampirkan BA dari Bluecharge.</p>`
+      },
+      { heading: "E. Reader Parkee — Permintaan Refund", html: `
+        <table>
+          <tr><th>Jenis Reader</th><th>Ketentuan Refund</th></tr>
+          <tr><td>Reader STI / Eksisting</td><td>Double bayar kartu → langsung ke RC dengan BA oleh ops lokasi</td></tr>
+          <tr><td>Reader PARKEE (Human Error)</td><td>Refund ke RC dengan BA ops lokasi</td></tr>
+          <tr><td>Reader PARKEE (Sistem)</td><td>Refund melalui PARKEE dengan BA</td></tr>
+        </table>`
+      },
+      { heading: "Catatan Umum & Pengecualian", html: `
+        <table>
+          <tr><th>Ketentuan</th><th>Uraian</th></tr>
+          <tr><td>BA</td><td>Harus jelas, valid, dan menjelaskan penyebab</td></tr>
+          <tr><td>Kesimpulan</td><td>Wajib mencantumkan human error atau sistem</td></tr>
+          <tr><td>Lampiran</td><td>Harus lengkap dan sah</td></tr>
+        </table>
+        <table>
+          <tr><th>Kondisi</th><th>Ketentuan</th></tr>
+          <tr><td>Tidak sesuai SOP</td><td>Refund tidak diproses</td></tr>
+          <tr><td>Data tidak valid / penyalahgunaan</td><td>Refund tidak diproses</td></tr>
+        </table>`
+      },
+      { heading: "Catatan Dokumen", html: `
+        <p>Dokumen internal Parkee — SOP &amp; SLA Customer Success. Bagan alur keputusan refund Quickbook &amp; EV/EV Only tersedia sebagai diagram terpisah di dokumen sumber.</p>`
+      },
+    ]
+  },
+
+  "sla-vehicle": {
+    title: "SOP & SLA Verifikasi Data Vehicle 2026",
+    subtitle: "Target dan SLA verifikasi data kendaraan via CMS",
+    icon: "🚗",
+    source: "Berlaku tahun 2026 — nurarif-png.github.io/SLA-DATA-Vehicle-2026",
+    sections: [
+      { heading: "1. Tujuan", html: `
+        <p>Memastikan seluruh data Vehicle yang masuk melalui CMS diverifikasi secara akurat dan tepat waktu, sesuai target operasional dan SLA yang berlaku.</p>`
+      },
+      { heading: "2. Kondisi Data per 2026", html: `
+        <table>
+          <tr><th>Status</th><th>Create At</th><th>Update At</th><th>Total</th></tr>
+          <tr><td>On Review (belum diverifikasi)</td><td>19.475</td><td>21.002</td><td>40.477</td></tr>
+          <tr><td>Verified (sudah diverifikasi)</td><td>2.018</td><td>5.195</td><td>7.213</td></tr>
+        </table>`
+      },
+      { heading: "3. Pembagian PIC", html: `
+        <table>
+          <tr><th>PIC</th><th>Tanggung Jawab</th></tr>
+          <tr><td>Daud</td><td>Pengecekan data backlog mulai Januari.</td></tr>
+          <tr><td>Ghaida</td><td>Pengecekan data new mulai Juli dan seterusnya.</td></tr>
+          <tr><td>Nur Arif</td><td>Monitoring proses verifikasi, bantuan bila ada backlog/lonjakan volume.</td></tr>
+        </table>`
+      },
+      { heading: "4–5. Target & SLA", html: `
+        <table>
+          <tr><th>Jenis Data</th><th>Target per Shift</th><th>SLA</th></tr>
+          <tr><td>Data New</td><td>35–60 data/shift</td><td>Maks. 7 hari kerja (di luar peak season)</td></tr>
+          <tr><td>Data Backlog</td><td>35–60 data/shift</td><td>Diprioritaskan secepat mungkin</td></tr>
+        </table>
+        <p>Target adalah jumlah minimal pada kondisi normal; jika memungkinkan, CS diharapkan memproses lebih dari target untuk mempercepat penyelesaian backlog.</p>`
+      },
+      { heading: "6. Alur Proses Verifikasi", html: `
+        <ol>
+          <li>CS menerima data Vehicle dari CMS.</li>
+          <li>CS mengecek kelengkapan dan validitas data.</li>
+          <li>Jika sesuai, lakukan verifikasi dan update status di CMS.</li>
+          <li>Jika ada ketidaksesuaian, tindak lanjut sesuai prosedur.</li>
+          <li>Monitoring progres berkala oleh Nur Arif untuk memastikan target &amp; SLA tercapai.</li>
+        </ol>`
+      },
+      { heading: "7. Disclaimer", html: `
+        <p>Proses verifikasi disesuaikan dengan beban kerja CS. Pada peak season atau lonjakan tiket, waktu penyelesaian bisa melebihi target SLA karena peningkatan volume. Tim tetap mengupayakan penyelesaian secepat mungkin sesuai kapasitas operasional.</p>`
+      },
+    ]
+  },
+
+  "priority": {
+    title: "Struktur Prioritas Kasus",
+    subtitle: "Level prioritas, SLA, PIC, dan contoh kasus",
+    icon: "🚦",
+    source: "nurarif-png.github.io/Label-Priority-case",
+    sections: [
+      { heading: "Tentang Halaman Ini", html: `
+        <p>Daftar level prioritas beserta kriteria dampak dan frekuensi kejadian. Gunakan tombol Edit di pojok kanan atas untuk mengubah teks, atau tambah level baru sesuai kebutuhan tim.</p>`
+      },
+      { heading: "P0 — Kritis", html: `
+        <p>Risiko dengan prioritas tertinggi karena dampaknya sangat besar dan kejadian yang mungkin terjadi sangat sering.</p>
+        <p><strong>SLA:</strong> Respon &lt; 15 menit, selesai &lt; 2 jam &nbsp; | &nbsp; <strong>PIC:</strong> Team Lead / All CS yang sedang bertugas</p>
+        <p class="q">Contoh kasus</p>
+        <ul>
+          <li>Sistem/aplikasi down total</li>
+          <li>Pembayaran gagal massal</li>
+          <li>Data pelanggan bocor atau hilang</li>
+        </ul>`
+      },
+      { heading: "P1 — Tinggi", html: `
+        <p>Risiko prioritas tinggi karena dampaknya besar dan kejadian cukup sering.</p>
+        <p><strong>SLA:</strong> Respon &lt; 30 menit, selesai &lt; 4 jam &nbsp; | &nbsp; <strong>PIC:</strong> All CS yang sedang bertugas</p>
+        <p class="q">Contoh kasus</p>
+        <ul>
+          <li>Fitur utama tidak berfungsi untuk sebagian pengguna</li>
+          <li>Keluhan berulang dari banyak pelanggan dalam waktu singkat</li>
+        </ul>`
+      },
+      { heading: "P2 — Sedang", html: `
+        <p>Risiko prioritas sedang, dampak cukup signifikan walau kejadian tidak sering.</p>
+        <p><strong>SLA:</strong> Respon &lt; 1 jam, selesai &lt; 1 hari kerja &nbsp; | &nbsp; <strong>PIC:</strong> All CS yang sedang bertugas</p>
+        <p class="q">Contoh kasus</p>
+        <ul>
+          <li>Bug minor pada fitur tertentu</li>
+          <li>Komplain yang mempengaruhi operasional seperti internet mati atau proses approval member lama</li>
+        </ul>`
+      },
+      { heading: "P3 — Rendah", html: `
+        <p>Risiko prioritas rendah, dampak tergolong kecil dan kejadian cukup jarang.</p>
+        <p><strong>SLA:</strong> Respon &lt; 4 jam, selesai &lt; 2 hari kerja &nbsp; | &nbsp; <strong>PIC:</strong> All CS yang sedang bertugas</p>
+        <p class="q">Contoh kasus</p>
+        <ul>
+          <li>Kendala eksternal (e-wallet timeout) yang menyebabkan tidak bisa transaksi, tiket menjadi pending</li>
+        </ul>`
+      },
+      { heading: "P4 — Sangat Rendah", html: `
+        <p>Risiko prioritas sangat rendah, dampak sangat kecil dan kejadian sangat jarang.</p>
+        <p><strong>SLA:</strong> Respon 1 hari kerja, tidak ada target penyelesaian ketat &nbsp; | &nbsp; <strong>PIC:</strong> All CS yang sedang bertugas</p>
+        <p class="q">Contoh kasus</p>
+        <ul>
+          <li>Human error karena tidak paham cara penggunaan produk</li>
+        </ul>`
+      },
+      { heading: "P5 — Sangat Sangat Rendah", html: `
+        <p>Dampak hampir tidak signifikan dan hampir tidak pernah terjadi — atau meski sering terjadi, penanganannya cepat &amp; masalah segera selesai.</p>
+        <p><strong>SLA:</strong> Respon 1 hari kerja, tidak ada target penyelesaian ketat &nbsp; | &nbsp; <strong>PIC:</strong> All CS yang sedang bertugas</p>
+        <p class="q">Contoh kasus</p>
+        <ul>
+          <li>Issue reguler yang sudah sering terjadi dan penanganannya cepat, contoh: issue refund</li>
+        </ul>`
+      },
+    ]
+  }
+};
+
+/* ---------- State ---------- */
+const NAV_ORDER = ["wuzz","qris","kompensasi","sla-cs-refund","sla-vehicle","priority"];
+let pages = {};          // working copy (loaded from storage or defaults)
+let currentId = NAV_ORDER[0];
+let editMode = false;
+
+/* ---------- Storage helpers (Firestore = data sama di semua perangkat) --- */
+async function loadPage(id){
+  if(firebaseReady){
+    try{
+      const { data, error } = await supabase
+        .from(TABLE_NAME)
+        .select("data")
+        .eq("id", id)
+        .maybeSingle();
+      if(error) throw error;
+      if(data && data.data){
+        return data.data;
+      }
+    }catch(e){
+      console.error("Gagal memuat halaman dari Supabase:", e);
+    }
+  }
+  return JSON.parse(JSON.stringify(DEFAULT_PAGES[id]));
+}
+
+async function savePage(id){
+  if(!firebaseReady) return false;
+  try{
+    const { error } = await supabase
+      .from(TABLE_NAME)
+      .upsert({ id, data: pages[id], updated_at: new Date().toISOString() });
+    if(error) throw error;
+    return true;
+  }catch(e){
+    console.error("Gagal menyimpan ke Supabase:", e);
+    return false;
+  }
+}
+
+/* ---------- Init ---------- */
+async function init(){
+  await initFirebase();
+
+  if(!firebaseReady){
+    document.getElementById("configBanner").style.display = "flex";
+  }
+
+  const results = await Promise.all(NAV_ORDER.map(id => loadPage(id)));
+  NAV_ORDER.forEach((id, i) => { pages[id] = results[i]; });
+
+  document.getElementById("loadingOverlay").classList.remove("show");
+  renderNav();
+  renderPage(currentId);
+  bindGlobalEvents();
+}
+
+function renderNav(){
+  const nav = document.getElementById("nav");
+  nav.innerHTML = "";
+  NAV_ORDER.forEach(id => {
+    const p = pages[id];
+    const btn = document.createElement("button");
+    btn.className = "nav-item" + (id === currentId ? " active" : "");
+    btn.innerHTML = `<span class="nav-icon">${p.icon}</span><span class="nlabel">${escapeHtml(p.title)}</span>`;
+    btn.addEventListener("click", () => {
+      if(editMode){
+        if(!confirm("Keluar dari mode edit tanpa menyimpan? Perubahan yang belum di-Save akan hilang.")) return;
+        exitEditMode(false);
+      }
+      currentId = id;
+      renderNav();
+      renderPage(id);
+      closeSidebarMobile();
+    });
+    nav.appendChild(btn);
+  });
+}
+
+function renderPage(id){
+  const page = pages[id];
+  document.getElementById("pageTitle").innerHTML =
+    `${escapeHtml(page.title)}<span class="sub">${escapeHtml(page.subtitle || "")}</span>`;
+  document.getElementById("sourceNote").textContent = page.source || "";
+  renderSections();
+  document.getElementById("content").scrollTop = 0;
+  window.scrollTo(0,0);
+}
+
+function renderSections(){
+  const wrap = document.getElementById("sections");
+  const page = pages[currentId];
+  wrap.innerHTML = "";
+
+  if(!page.sections || page.sections.length === 0){
+    wrap.innerHTML = `<div class="empty-state"><div class="e-ico">📭</div>Belum ada konten di halaman ini.${editMode ? ' Gunakan tombol di bawah untuk menambah section.' : ''}</div>`;
+    return;
+  }
+
+  page.sections.forEach((sec, idx) => {
+    const card = document.createElement("div");
+    card.className = "section-card";
+    card.dataset.idx = idx;
+
+    const head = document.createElement("div");
+    head.className = "section-head";
+    head.innerHTML = `
+      <div class="section-heading" ${editMode ? 'contenteditable="true"' : ''} data-field="heading"></div>
+      <div class="section-tools ${editMode ? 'show' : ''}">
+        <button class="icon-btn del" title="Hapus section" data-action="del-section">✕</button>
+      </div>
+    `;
+    head.querySelector('[data-field="heading"]').textContent = sec.heading;
+
+    const body = document.createElement("div");
+    body.className = "section-body";
+    body.dataset.field = "body";
+    if(editMode) body.setAttribute("contenteditable", "true");
+    body.innerHTML = sec.html;
+
+    card.appendChild(head);
+    card.appendChild(body);
+    wrap.appendChild(card);
+
+    // live-sync edits into memory as user types
+    if(editMode){
+      head.querySelector('[data-field="heading"]').addEventListener("input", e => {
+        pages[currentId].sections[idx].heading = e.target.textContent;
+      });
+      body.addEventListener("input", e => {
+        pages[currentId].sections[idx].html = e.target.innerHTML;
+      });
+      head.querySelector('[data-action="del-section"]').addEventListener("click", () => {
+        if(confirm("Hapus section \"" + (pages[currentId].sections[idx].heading || "ini") + "\"?")){
+          pages[currentId].sections.splice(idx, 1);
+          renderSections();
+        }
+      });
+    }
+  });
+}
+
+/* ---------- Edit mode ---------- */
+function enterEditMode(){
+  if(EDIT_PASSWORD){
+    const input = prompt("Masukkan password edit:");
+    if(input === null) return;
+    if(input !== EDIT_PASSWORD){
+      showToast("Password salah");
+      return;
+    }
+  }
+  editMode = true;
+  document.getElementById("editBtn").style.display = "none";
+  document.getElementById("saveBtn").style.display = "inline-flex";
+  document.getElementById("editBanner").classList.add("show");
+  document.getElementById("addSectionBtn").classList.add("show");
+  renderSections();
+}
+
+function exitEditMode(){
+  editMode = false;
+  document.getElementById("editBtn").style.display = "inline-flex";
+  document.getElementById("saveBtn").style.display = "none";
+  document.getElementById("editBanner").classList.remove("show");
+  document.getElementById("addSectionBtn").classList.remove("show");
+  renderSections();
+}
+
+async function doSave(){
+  const saveBtn = document.getElementById("saveBtn");
+  saveBtn.disabled = true;
+  saveBtn.textContent = "Menyimpan…";
+  const ok = await savePage(currentId);
+  saveBtn.disabled = false;
+  saveBtn.textContent = "💾 Save";
+  exitEditMode();
+  showToast(ok ? "Tersimpan ✓ (terlihat oleh semua orang)" : "Gagal menyimpan — cek konfigurasi Supabase");
+}
+
+/* ---------- Events ---------- */
+function bindGlobalEvents(){
+  document.getElementById("editBtn").addEventListener("click", enterEditMode);
+  document.getElementById("saveBtn").addEventListener("click", doSave);
+
+  document.getElementById("pageDeleteBtn").addEventListener("click", async () => {
+    if(EDIT_PASSWORD){
+      const input = prompt("Masukkan password edit untuk menghapus:");
+      if(input === null) return;
+      if(input !== EDIT_PASSWORD){ showToast("Password salah"); return; }
+    }
+    const page = pages[currentId];
+    if(!confirm('Hapus SELURUH konten halaman "' + page.title + '"? Menu tetap ada tapi kosong. Tindakan ini langsung tersimpan dan terlihat oleh semua orang.')) return;
+    pages[currentId].sections = [];
+    const ok = await savePage(currentId);
+    if(editMode) exitEditMode();
+    renderSections();
+    showToast(ok ? "Konten halaman dihapus" : "Gagal menyimpan — cek konfigurasi Supabase");
+  });
+
+  document.getElementById("addSectionBtn").addEventListener("click", () => {
+    pages[currentId].sections.push({ heading: "Section baru", html: "<p>Tulis konten di sini...</p>" });
+    renderSections();
+    const cards = document.querySelectorAll(".section-card");
+    const last = cards[cards.length - 1];
+    if(last) last.scrollIntoView({ behavior: "smooth", block: "center" });
+  });
+
+  document.getElementById("menuToggle").addEventListener("click", () => {
+    document.getElementById("sidebar").classList.toggle("open");
+    document.getElementById("overlay").classList.toggle("show");
+  });
+  document.getElementById("overlay").addEventListener("click", closeSidebarMobile);
+
+  window.addEventListener("beforeunload", (e) => {
+    if(editMode){
+      e.preventDefault();
+      e.returnValue = "";
+    }
+  });
+}
+
+function closeSidebarMobile(){
+  document.getElementById("sidebar").classList.remove("open");
+  document.getElementById("overlay").classList.remove("show");
+}
+
+function showToast(msg){
+  const t = document.getElementById("toast");
+  t.textContent = msg;
+  t.classList.add("show");
+  clearTimeout(showToast._tm);
+  showToast._tm = setTimeout(() => t.classList.remove("show"), 2200);
+}
+
+function escapeHtml(str){
+  return String(str).replace(/[&<>"']/g, c => ({
+    "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"
+  }[c]));
+}
+
+init();
+</script>
+</body>
+</html>
