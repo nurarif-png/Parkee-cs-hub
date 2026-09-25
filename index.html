@@ -282,6 +282,17 @@ body{
 .section-body strong{color:var(--text);}
 .section-body .q{font-weight:600;margin:16px 0 5px;color:var(--text);}
 .section-body .q:first-child{margin-top:0;}
+.section-body details{border:1px solid var(--border);border-radius:8px;margin:0 0 10px;overflow:hidden;background:var(--panel-2);}
+.section-body summary{cursor:pointer;list-style:none;padding:12px 42px 12px 14px;font-weight:600;font-size:14.5px;color:var(--text);position:relative;}
+.section-body summary::-webkit-details-marker{display:none;}
+.section-body summary::after{content:"+";position:absolute;right:14px;top:50%;transform:translateY(-50%);color:var(--accent);font-size:18px;font-weight:700;line-height:1;}
+.section-body details[open] summary::after{content:"\2212";}
+.section-body details[open] summary{border-bottom:1px solid var(--border);}
+.section-body details .d-body{padding:12px 14px 14px;font-size:14.5px;color:var(--text-dim);}
+.section-body details .d-body p{margin:0 0 8px;}
+.section-body details .d-body p:last-child{margin-bottom:0;}
+.section-body details .d-body em{color:var(--text-dim);font-style:italic;}
+.badge-soon{display:inline-block;margin-top:6px;padding:2px 10px;border-radius:20px;font-size:11px;font-weight:600;background:var(--warn-bg);color:var(--warn);}
 .section-body table{
   width:100%;border-collapse:collapse;font-size:13.5px;margin:12px 0 16px;
   display:block;overflow-x:auto;
@@ -1125,11 +1136,98 @@ const DEFAULT_PAGES = {
         </ul>`
       },
     ]
+  },
+
+  "parkee-protection": {
+    title: "FAQ PARKEE Protection",
+    subtitle: "Layanan perlindungan/asuransi di lokasi parkir CentrePark (BCA Insurance & Ezy Polis)",
+    icon: "🛡️",
+    source: "Sumber: FAQ CS - PARKEE Protection (Internal Draft)",
+    sections: [
+      { heading: "00. Ringkasan Cepat", html: `
+        <table>
+          <tr><th>Topik</th><th>Informasi</th><th>Aksi CS</th></tr>
+          <tr><td>Premi</td><td>Mobil Rp1.000/24 jam, Motor Rp500/24 jam</td><td>Jelaskan biaya masuk ke transaksi parkir bila tidak opt out dalam jendela waktu.</td></tr>
+          <tr><td>Opt Out</td><td>15 sampai 20 menit sejak Tap In</td><td>Arahkan ke QR/Web Opt Out resmi di lokasi.</td></tr>
+          <tr><td>BCA Insurance</td><td>Loss Item Protection, Mobil maks Rp5 jt, Motor maks Rp1 jt</td><td>Klaim: HALO BCA 1500888 + pengelola parkir.</td></tr>
+          <tr><td>Ezy Polis</td><td>Benefit modular sesuai kendaraan</td><td>Klaim: 0811 125 555 88 / cs@ezypolis.com.</td></tr>
+          <tr><td>Keputusan klaim</td><td>Diproses mitra asuransi</td><td>Jangan menjanjikan klaim pasti disetujui.</td></tr>
+        </table>
+        <p><em>Catatan CS: dokumen sumber masih berstatus draft. Jangan menjanjikan approval klaim atau nominal pembayaran, keputusan dan verifikasi ada pada mitra asuransi sesuai polis.</em></p>`
+      },
+      { heading: "A. Umum & Aktivasi", html: `
+        <details><summary>Apa itu PARKEE Protection?</summary><div class="d-body"><p>PARKEE Protection adalah layanan perlindungan/asuransi yang tersedia pada lokasi parkir CentrePark tertentu. Manfaat mengikuti mitra asuransi dan polis yang berlaku di lokasi tersebut.</p><p><em>Catatan CS: jangan menyamaratakan benefit BCA Insurance dan Ezy Polis.</em></p></div></details>
+        <details><summary>Di mana layanan ini berlaku?</summary><div class="d-body"><p>Pada lokasi parkir CentrePark yang sudah terintegrasi dengan PARKEE Protection.</p><p><em>Catatan CS: jangan mengasumsikan seluruh lokasi CentrePark sudah aktif.</em></p><span class="badge-soon">Coming soon, daftar lengkap lokasi & provider</span></div></details>
+        <details><summary>Berapa biaya premi?</summary><div class="d-body"><p>Rp1.000 per 24 jam untuk mobil dan Rp500 per 24 jam untuk motor. Pada flow TITO, biaya ditambahkan ke transaksi parkir bila customer tidak opt out.</p></div></details>
+        <details><summary>Kapan layanan aktif?</summary><div class="d-body"><p>Pada flow TITO di draft, proses dimulai saat customer Tap In menggunakan kartu e money di gate masuk.</p><p><em>Catatan CS: mekanisme final per lokasi/provider perlu mengikuti implementasi resmi, ada perbedaan wording dengan T&C Ezy Polis yang menyebut pembayaran lewat aplikasi PARKEE.</em></p></div></details>
+        <details><summary>Apakah perlu daftar ulang?</summary><div class="d-body"><p>Pada flow otomatis Smartcard di FAQ draft, customer tidak perlu melakukan pendaftaran ulang. Gunakan hanya untuk lokasi yang memakai flow tersebut.</p></div></details>
+        <details><summary>Apakah bisa opt out?</summary><div class="d-body"><p>Bisa. Customer memiliki jendela waktu sekitar 15 sampai 20 menit sejak Tap In untuk opt out melalui QR Code atau Web Opt Out resmi di lokasi.</p><p><em>Catatan CS: jangan berikan URL placeholder ke customer.</em></p><span class="badge-soon">Coming soon, URL Web Opt Out resmi</span></div></details>
+        <details><summary>Jika opt out berhasil, apakah tetap ditagih?</summary><div class="d-body"><p>Tidak. Customer yang berhasil opt out tidak dikenakan biaya asuransi.</p><p><em>Catatan CS: jika tetap tertagih, lakukan pengecekan transaksi sesuai SOP internal.</em></p><span class="badge-soon">Coming soon, SOP internet mati saat opt out</span></div></details>`
+      },
+      { heading: "B. Benefit BCA Insurance", html: `
+        <details><summary>Apa manfaat BCA Insurance?</summary><div class="d-body"><p>Asuransi Kebongkaran untuk kehilangan barang di dalam kendaraan akibat pencurian/kebongkaran yang memenuhi ketentuan polis dan disertai pengrusakan atau pemaksaan terhadap kendaraan.</p><p><em>Catatan CS: kerusakan kendaraan bukan manfaat tersendiri. Hanya barang hilang yang disertai bukti foto sebelum hilang yang diperbolehkan.</em></p></div></details>
+        <details><summary>Berapa limitnya?</summary><div class="d-body"><p>Maksimal Rp5.000.000 untuk kendaraan roda empat dan Rp1.000.000 untuk roda dua.</p><p><em>Catatan CS: limit maksimum bukan jaminan nominal pembayaran.</em></p></div></details>
+        <details><summary>Apakah semua barang otomatis ditanggung?</summary><div class="d-body"><p>Tidak. Kejadian dan barang harus memenuhi ketentuan pertanggungan serta verifikasi klaim, mengacu pada Wording Polis Standar Asuransi Kebongkaran Indonesia.</p></div></details>
+        <details><summary>Apakah ada deductible?</summary><div class="d-body"><p>Tidak ada, deductible/risiko sendiri disebut NIL. Semua ditanggung BCA.</p></div></details>`
+      },
+      { heading: "C. Benefit Ezy Polis", html: `
+        <details><summary>Benefit untuk mobil?</summary><div class="d-body"><p>Accident Death hingga Rp5.000.000, Personal Loss hingga Rp5.000.000, Vehicle Damage & Theft hingga Rp2.000.000, Inconvenience Coverage hingga Rp50.000 per kejadian, Minor Breakdown Assistance hingga Rp50.000.</p><p><em>Catatan CS: Inconvenience mencakup Queue Delay, Gate Error, Billing Dispute, Parking Disruption.</em></p></div></details>
+        <details><summary>Benefit untuk motor?</summary><div class="d-body"><p>Accident Death hingga Rp2.500.000, Personal Loss hingga Rp1.000.000, Vehicle Damage & Theft hingga Rp500.000, Loss of Helmet hingga Rp25.000, Inconvenience Coverage hingga Rp25.000 per kejadian, Minor Breakdown Assistance hingga Rp25.000.</p></div></details>
+        <details><summary>Apa itu Queue Delay?</summary><div class="d-body"><p>Perlindungan bila keterlambatan di gate masuk/keluar lebih dari 20 menit menyebabkan customer tidak dapat masuk atau keluar. Limit mobil Rp50.000, motor Rp25.000.</p></div></details>
+        <details><summary>Apa itu Gate Error?</summary><div class="d-body"><p>Perlindungan ketika gate tidak terbuka meskipun pembayaran berhasil, termasuk system error, kegagalan Wuzz detector, atau LPR detector. Limit mobil Rp50.000, motor Rp25.000.</p></div></details>
+        <details><summary>Apa itu Billing Dispute?</summary><div class="d-body"><p>Perlindungan atas ketidaksesuaian tagihan, termasuk overcharge atau perbedaan data sistem dengan penggunaan parkir aktual. Limit mobil Rp50.000, motor Rp25.000.</p></div></details>
+        <details><summary>Apa itu Parking Disruption?</summary><div class="d-body"><p>Perlindungan bila akses parkir terganggu atau terhalang kendaraan lain sehingga customer tidak dapat masuk, keluar, atau mengakses area parkir. Limit mobil Rp50.000, motor Rp25.000.</p></div></details>
+        <details><summary>Apa itu Minor Breakdown Assistance?</summary><div class="d-body"><p>Perlindungan untuk kendala ringan di area parkir seperti ban kempes atau masalah baterai/aki. Limit mobil Rp50.000, motor Rp25.000.</p></div></details>
+        <details><summary>Apakah semua kejadian otomatis ditanggung?</summary><div class="d-body"><p>Tidak. Kejadian harus masuk lingkup jaminan dan tidak termasuk pengecualian polis.</p><p><em>Catatan CS: keputusan coverage final ada pada provider.</em></p></div></details>`
+      },
+      { heading: "D. Klaim BCA Insurance", html: `
+        <details><summary>Siapa yang memproses klaim?</summary><div class="d-body"><p>Klaim diproses melalui mitra asuransi. Customer melapor, melengkapi dokumen, menunggu verifikasi, lalu menerima status resmi dari provider.</p><p><em>Catatan CS: CS PARKEE berperan pada edukasi dan routing, bukan approval.</em></p></div></details>
+        <details><summary>Cara klaim BCA Insurance?</summary><div class="d-body"><p>Hubungi HALO BCA 1500888, laporkan kejadian kepada pengelola parkir, peroleh surat pelaporan, dan siapkan dokumen klaim.</p></div></details>
+        <details><summary>Batas waktu klaim BCA?</summary><div class="d-body"><p>Maksimal 7 hari kalender sejak tanggal kejadian/kerugian.</p><p><em>Catatan CS: keterlambatan dapat menyebabkan klaim tertunda, tidak diproses, atau ditolak sesuai polis. Submit dokumen ke provider maksimal 30 hari kalender.</em></p></div></details>
+        <details><summary>Dokumen klaim BCA?</summary><div class="d-body"><p>Antara lain nama Tertanggung, nomor transaksi, bukti kehilangan/pengrusakan dari pihak berwenang, KTP, nomor polisi, dan jenis kendaraan.</p><p><em>Catatan CS: provider dapat meminta dokumen tambahan.</em></p></div></details>
+        <details><summary>Sudah punya asuransi lain?</summary><div class="d-body"><p>Pertanggungan ganda dapat dimungkinkan, penanganan klaim tetap mengikuti ketentuan polis.</p></div></details>`
+      },
+      { heading: "E. Klaim Ezy Polis", html: `
+        <details><summary>Cara klaim Ezy Polis?</summary><div class="d-body"><p>Hubungi 0811 125 555 88 atau email cs@ezypolis.com.</p></div></details>
+        <details><summary>Batas waktu klaim Ezy Polis?</summary><div class="d-body"><p>Draft menyebut maksimal 2 hari kalender sejak tanggal transaksi (termasuk Sabtu/Minggu), FAQ general juga menyebut 2 x 24 jam sejak insiden.</p><p><em>Catatan CS: wording belum sepenuhnya konsisten, gunakan ketentuan resmi provider saat launch. Submit dokumen ke provider maksimal 2 hari.</em></p><span class="badge-soon">Coming soon, konfirmasi wording final</span></div></details>
+        <details><summary>Dokumen umum Ezy Polis?</summary><div class="d-body"><p>Fotokopi KTP/KK, e ticket/booking proof, bukti pembayaran, serta dokumen pendukung seperti Incident Report, Surat Kematian, atau Laporan Polisi sesuai jenis klaim.</p></div></details>
+        <details><summary>Apakah foto diperlukan?</summary><div class="d-body"><p>Diperlukan untuk kerusakan kendaraan, kehilangan barang, gate error, delay, dan billing dispute. Tidak diperlukan untuk Accident Death dan Minor Breakdown Assistance.</p></div></details>
+        <details><summary>Apakah laporan polisi selalu diperlukan?</summary><div class="d-body"><p>Tidak. Laporan polisi khusus untuk Vehicle Theft & Damage.</p><p><em>Catatan CS: harus pilih salah satu metode klaim, tidak bisa kombinasi (single claim method only).</em></p></div></details>
+        <details><summary>Berapa lama pembayaran klaim?</summary><div class="d-body"><p>Maksimal 3 hari kerja sejak dokumen lengkap dan terverifikasi, bukan dihitung sejak laporan pertama.</p></div></details>
+        <details><summary>Apakah klaim dibayar sebesar limit maksimum?</summary><div class="d-body"><p>Tidak selalu. Pembayaran mengikuti kerugian riil yang disetujui penanggung, maksimal sebesar limit manfaat.</p><p><em>Catatan CS: jangan menjanjikan nominal maksimum.</em></p></div></details>
+        <details><summary>Bisa lebih dari satu klaim untuk satu kejadian?</summary><div class="d-body"><p>Tidak. Ezy Polis menerapkan single claim method.</p></div></details>
+        <details><summary>Apakah ada deductible?</summary><div class="d-body"><p>Tidak ada, deductible/risiko sendiri disebut NIL.</p></div></details>`
+      },
+      { heading: "F. Guardrail Komunikasi Agent", html: `
+        <p class="q">Jangan katakan</p>
+        <ul>
+          <li>"Klaim pasti disetujui." Gunakan: "Pengajuan akan diverifikasi mitra asuransi sesuai ketentuan polis."</li>
+          <li>"Pasti dapat Rp5 juta." Gunakan: "Limit maksimal hingga Rp5 juta, pembayaran mengikuti hasil verifikasi dan ketentuan polis."</li>
+        </ul>
+        <p class="q">Aturan lain</p>
+        <ul>
+          <li>Jangan menyamakan benefit BCA dan Ezy Polis, pastikan provider lokasi/transaksi terlebih dahulu.</li>
+          <li>Jangan memberikan URL opt out placeholder, gunakan QR/Web Opt Out resmi yang tersedia di lokasi.</li>
+        </ul>
+        <p class="q">Data awal yang perlu dikumpulkan CS</p>
+        <ul>
+          <li>Lokasi parkir dan waktu kejadian/transaksi</li>
+          <li>Jenis kendaraan dan nomor polisi</li>
+          <li>Metode transaksi/Tap In</li>
+          <li>Jenis insiden/kerugian</li>
+          <li>Bukti transaksi/booking/e ticket bila tersedia</li>
+          <li>Provider yang berlaku pada lokasi/transaksi</li>
+        </ul>`
+      },
+      { heading: "Catatan Dokumen", html: `
+        <p>Dokumen internal disusun dari FAQ CS PARKEE Protection (status Draft) untuk referensi tim CS. Beberapa poin masih menunggu konfirmasi sebelum launch: daftar lokasi dan mapping provider, URL resmi Web Opt Out, mekanisme aktivasi final per lokasi, periode perlindungan final per provider, wording batas pelaporan Ezy Polis, daftar lengkap exclusions, dan SOP bila customer sudah opt out tapi tetap tertagih. Perbarui halaman ini begitu ketentuan resmi tersedia.</p>`
+      },
+    ]
   }
 };
 
 /* ---------- State ---------- */
-const NAV_ORDER = ["wuzz","qris","kompensasi","sla-cs-refund","sla-vehicle","priority"];
+const NAV_ORDER = ["wuzz","qris","kompensasi","sla-cs-refund","sla-vehicle","priority","parkee-protection"];
 let pages = {};          // working copy (loaded from storage or defaults)
 let currentId = NAV_ORDER[0];
 let editMode = false;
