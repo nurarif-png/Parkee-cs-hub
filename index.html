@@ -520,13 +520,12 @@ const DEFAULT_PAGES = {
     source: "Sumber: PRD Share My Wuzz — nurarif-png.github.io/FAQ-Share-my-wuzz",
     sections: [
       { heading: "01. Tentang Fitur", html: `
-        <p class="q">Apa itu fitur Share My Wuzz?</p>
-        <p>Fitur yang memungkinkan pemilik Wuzz membagikan akses penggunaan satu sticker Wuzz ke orang lain (misalnya anggota keluarga) yang memakai kendaraan yang sama. Saat kendaraan keluar lewat gate non-Wuzz, orang yang diberi akses tetap bisa menggunakan QR exit tanpa harus jadi pemilik Wuzz.</p>
-        <p class="q">Siapa saja pihak yang terlibat?</p>
-        <ul>
+        
+        <details><summary>Apa itu fitur Share My Wuzz?</summary><div class="d-body"><p>Fitur yang memungkinkan pemilik Wuzz membagikan akses penggunaan satu sticker Wuzz ke orang lain (misalnya anggota keluarga) yang memakai kendaraan yang sama. Saat kendaraan keluar lewat gate non-Wuzz, orang yang diberi akses tetap bisa menggunakan QR exit tanpa harus jadi pemilik Wuzz.</p></div></details>
+        <details><summary>Siapa saja pihak yang terlibat?</summary><div class="d-body"><ul>
           <li><strong>Owner</strong> — pemilik Wuzz yang membagikan akses.</li>
           <li><strong>Member / Family Member / Second User</strong> — pihak yang menerima akses berbagi dari Owner.</li>
-        </ul>`
+        </ul></div></details>`
       },
       { heading: "02. Cara Penggunaan — Owner", html: `
         <p><strong>Tutorial untuk Owner: cara membagikan Wuzz</strong></p>
@@ -555,79 +554,60 @@ const DEFAULT_PAGES = {
         <p>Member tidak wajib jadi pembayar. Selama Auto Approve menyala, pembayaran dibebankan ke Default Paying User kecuali member mengganti metode pembayaran ke miliknya sebelum keluar gate.</p>`
       },
       { heading: "04. FAQ Owner", html: `
-        <p class="q">Syarat agar bisa membagikan Wuzz?</p>
-        <p>Status Wuzz owner Aktif, dan Wuzz terdaftar atas nama owner sendiri.</p>
-        <p class="q">Bagaimana cara membagikan Wuzz ke anggota lain?</p>
-        <ol>
+        
+        <details><summary>Syarat agar bisa membagikan Wuzz?</summary><div class="d-body"><p>Status Wuzz owner Aktif, dan Wuzz terdaftar atas nama owner sendiri.</p></div></details>
+        <details><summary>Bagaimana cara membagikan Wuzz ke anggota lain?</summary><div class="d-body"><ol>
           <li>Masuk ke halaman detail kendaraan Wuzz.</li>
           <li>Tekan tombol Share My Wuzz.</li>
           <li>Untuk pertama kali menekan tombol ini, akan muncul bottom sheet Syarat &amp; Ketentuan yang harus disetujui — persetujuan ini hanya berlaku sekali, tidak akan muncul lagi meski owner punya lebih dari satu Wuzz.</li>
           <li>Setelah itu masuk ke halaman input nomor telepon — nomor bisa diketik manual atau dipilih dari kontak di HP.</li>
           <li>Tekan Send Invitation setelah minimal satu nomor berhasil dimasukkan.</li>
-        </ol>
-        <p class="q">Maksimal berapa orang per Wuzz?</p>
-        <p>Maksimal 10 orang untuk satu Wuzz (gabungan anggota aktif dan yang masih menunggu konfirmasi/pending).</p>
-        <p class="q">Kenapa nomor telepon gagal / error?</p>
-        <ul>
+        </ol></div></details>
+        <details><summary>Maksimal berapa orang per Wuzz?</summary><div class="d-body"><p>Maksimal 10 orang untuk satu Wuzz (gabungan anggota aktif dan yang masih menunggu konfirmasi/pending).</p></div></details>
+        <details><summary>Kenapa nomor telepon gagal / error?</summary><div class="d-body"><ul>
           <li>Belum terdaftar di PARKEE.</li>
           <li>Sudah terdaftar tapi belum ada e-wallet tersambung.</li>
           <li>Versi aplikasi terlalu lama.</li>
           <li>Nomor sudah pernah diundang (pending) / sudah jadi anggota aktif.</li>
           <li>Owner memasukkan nomornya sendiri.</li>
           <li>Owner sudah punya 10 anggota.</li>
-        </ul>
-        <p class="q">Apa itu Default Paying User &amp; cara menggantinya?</p>
-        <p>Pengguna yang dibebankan pembayaran saat Auto Approve menyala (default: owner). Ganti lewat titik tiga di sebelah nama pada halaman Sharing List.</p>
-        <p class="q">Apakah owner mendapat notifikasi setelah berhasil mengirim undangan?</p>
-        <p>Owner tidak menerima push notification saat undangan berhasil dikirim — hanya muncul konfirmasi "Invitations Shared!" di dalam aplikasi. Undangan otomatis kedaluwarsa dalam 24 jam jika tidak direspons.</p>
-        <p class="q">Bagaimana cara melihat siapa saja yang sudah diundang atau sudah aktif berbagi Wuzz?</p>
-        <p>Tekan tombol yang berubah menjadi "Sharing with X people" pada halaman detail Wuzz. Ini membuka halaman Sharing List, yang menampilkan bagian Wuzz Owner dan bagian Sharing With (anggota aktif dan yang masih pending).</p>
-        <p class="q">Cara menghentikan akses anggota?</p>
-        <p>Titik tiga di samping nama anggota → Stop Sharing → konfirmasi. Undangan pending bisa dibatalkan dari halaman yang sama.</p>
-        <p class="q">Apakah owner diberi tahu saat anggota menerima/menolak undangan atau berhenti berbagi sendiri?</p>
-        <p>Ya. Owner akan mendapat push notification saat: anggota menerima undangan, anggota menolak undangan (manual maupun otomatis karena kedaluwarsa 24 jam), dan anggota menghentikan sendiri (unsync) akses berbaginya.</p>`
+        </ul></div></details>
+        <details><summary>Apa itu Default Paying User &amp; cara menggantinya?</summary><div class="d-body"><p>Pengguna yang dibebankan pembayaran saat Auto Approve menyala (default: owner). Ganti lewat titik tiga di sebelah nama pada halaman Sharing List.</p></div></details>
+        <details><summary>Apakah owner mendapat notifikasi setelah berhasil mengirim undangan?</summary><div class="d-body"><p>Owner tidak menerima push notification saat undangan berhasil dikirim — hanya muncul konfirmasi "Invitations Shared!" di dalam aplikasi. Undangan otomatis kedaluwarsa dalam 24 jam jika tidak direspons.</p></div></details>
+        <details><summary>Bagaimana cara melihat siapa saja yang sudah diundang atau sudah aktif berbagi Wuzz?</summary><div class="d-body"><p>Tekan tombol yang berubah menjadi "Sharing with X people" pada halaman detail Wuzz. Ini membuka halaman Sharing List, yang menampilkan bagian Wuzz Owner dan bagian Sharing With (anggota aktif dan yang masih pending).</p></div></details>
+        <details><summary>Cara menghentikan akses anggota?</summary><div class="d-body"><p>Titik tiga di samping nama anggota → Stop Sharing → konfirmasi. Undangan pending bisa dibatalkan dari halaman yang sama.</p></div></details>
+        <details><summary>Apakah owner diberi tahu saat anggota menerima/menolak undangan atau berhenti berbagi sendiri?</summary><div class="d-body"><p>Ya. Owner akan mendapat push notification saat: anggota menerima undangan, anggota menolak undangan (manual maupun otomatis karena kedaluwarsa 24 jam), dan anggota menghentikan sendiri (unsync) akses berbaginya.</p></div></details>`
       },
       { heading: "05. FAQ Member", html: `
-        <p class="q">Syarat menerima berbagi Wuzz?</p>
-        <p>Sudah punya akun PARKEE dengan minimal satu e-wallet tersambung.</p>
-        <p class="q">Bagaimana cara menerima undangan berbagi Wuzz?</p>
-        <p>Menekan notifikasi mengarahkan ke halaman Wuzz Sharing Request (menampilkan waktu kedaluwarsa, nomor Wuzz, nomor kendaraan, jenis Tag), lalu bisa menekan Accept atau Decline.</p>
-        <p class="q">Berapa lama undangan berlaku sebelum hangus?</p>
-        <p>24 jam sejak dikirim. Jika tidak direspons, otomatis ditolak (auto decline).</p>
-        <p class="q">Setelah menerima undangan, apa yang bisa dilakukan anggota?</p>
-        <ul>
+        
+        <details><summary>Syarat menerima berbagi Wuzz?</summary><div class="d-body"><p>Sudah punya akun PARKEE dengan minimal satu e-wallet tersambung.</p></div></details>
+        <details><summary>Bagaimana cara menerima undangan berbagi Wuzz?</summary><div class="d-body"><p>Menekan notifikasi mengarahkan ke halaman Wuzz Sharing Request (menampilkan waktu kedaluwarsa, nomor Wuzz, nomor kendaraan, jenis Tag), lalu bisa menekan Accept atau Decline.</p></div></details>
+        <details><summary>Berapa lama undangan berlaku sebelum hangus?</summary><div class="d-body"><p>24 jam sejak dikirim. Jika tidak direspons, otomatis ditolak (auto decline).</p></div></details>
+        <details><summary>Setelah menerima undangan, apa yang bisa dilakukan anggota?</summary><div class="d-body"><ul>
           <li>Wuzz muncul di daftar kendaraan anggota, ditandai ikon "shared" yang menunjukkan Wuzz bukan miliknya sendiri.</li>
           <li>Bisa melihat pengaturan Wuzz (Auto Approve, Auto Pay, LPR) — status ON/OFF, tapi tidak bisa mengubahnya.</li>
           <li>Bisa melihat siapa Default Paying User saat ini.</li>
           <li>Bisa mengakses riwayat penggunaan (Wuzz Usage History) milik transaksinya sendiri.</li>
           <li>Bisa berhenti berbagi sendiri (unsync) kapan saja lewat tombol Leave Access.</li>
-        </ul>
-        <p class="q">Bisakah member mengubah pengaturan Wuzz?</p>
-        <p>Tidak — hanya owner yang berhak mengatur Auto Approve, Auto Pay, LPR, dan aktif/nonaktif Wuzz.</p>
-        <p class="q">Bagaimana cara berhenti menjadi anggota berbagi (unsync)?</p>
-        <p>Buka halaman detail Wuzz yang dibagikan, tekan tombol Leave Access, lalu konfirmasi pada bottom sheet yang muncul. Anggota akan diarahkan ke homepage dan kehilangan akses ke Wuzz tersebut.</p>
-        <p class="q">Apakah pemilik (owner) akan tahu jika saya berhenti berbagi sendiri?</p>
-        <p>Ya, owner akan mendapat push notification bahwa anggota tersebut telah menghentikan sendiri (unsync) akses berbagi Wuzz.</p>
-        <p class="q">Apa yang terjadi jika owner menghapus member dari daftar berbagi?</p>
-        <p>Member langsung kehilangan akses ke Wuzz tersebut dan menerima push notification bahwa akses berbaginya telah dihapus oleh owner.</p>`
+        </ul></div></details>
+        <details><summary>Bisakah member mengubah pengaturan Wuzz?</summary><div class="d-body"><p>Tidak — hanya owner yang berhak mengatur Auto Approve, Auto Pay, LPR, dan aktif/nonaktif Wuzz.</p></div></details>
+        <details><summary>Bagaimana cara berhenti menjadi anggota berbagi (unsync)?</summary><div class="d-body"><p>Buka halaman detail Wuzz yang dibagikan, tekan tombol Leave Access, lalu konfirmasi pada bottom sheet yang muncul. Anggota akan diarahkan ke homepage dan kehilangan akses ke Wuzz tersebut.</p></div></details>
+        <details><summary>Apakah pemilik (owner) akan tahu jika saya berhenti berbagi sendiri?</summary><div class="d-body"><p>Ya, owner akan mendapat push notification bahwa anggota tersebut telah menghentikan sendiri (unsync) akses berbagi Wuzz.</p></div></details>
+        <details><summary>Apa yang terjadi jika owner menghapus member dari daftar berbagi?</summary><div class="d-body"><p>Member langsung kehilangan akses ke Wuzz tersebut dan menerima push notification bahwa akses berbaginya telah dihapus oleh owner.</p></div></details>`
       },
       { heading: "06. Transaksi & Pembayaran Bersama", html: `
-        <p class="q">Siapa yang membayar saat Wuzz dipakai bersama?</p>
-        <ul>
+        
+        <details><summary>Siapa yang membayar saat Wuzz dipakai bersama?</summary><div class="d-body"><ul>
           <li><strong>Auto Approve ON</strong> — dibebankan ke Default Paying User, kecuali pengguna lain mengganti metode pembayaran sebelum keluar gate.</li>
           <li><strong>Auto Approve OFF</strong> — siapa pun yang lebih dulu menekan Allow pada exit confirmation.</li>
-        </ul>
-        <p class="q">Bagaimana jika saldo Default Paying User tidak cukup?</p>
-        <p>Hanya Default Paying User yang menerima notifikasi saldo kurang; pengguna lain tetap bisa membayar dengan mengganti metode pembayarannya sendiri.</p>
-        <p class="q">Bisakah member memakai kupon miliknya sendiri?</p>
-        <p>Bisa, hanya jika sedang berstatus pembayar untuk transaksi tersebut. Jika kupon dari agent sudah diterapkan, field kupon terkunci sampai transaksi selesai.</p>
-        <p class="q">Apakah anggota tetap bisa memakai Wuzz jika pemilik menonaktifkan, Wuzz diblokir, atau akun owner dihapus?</p>
-        <ul>
+        </ul></div></details>
+        <details><summary>Bagaimana jika saldo Default Paying User tidak cukup?</summary><div class="d-body"><p>Hanya Default Paying User yang menerima notifikasi saldo kurang; pengguna lain tetap bisa membayar dengan mengganti metode pembayarannya sendiri.</p></div></details>
+        <details><summary>Bisakah member memakai kupon miliknya sendiri?</summary><div class="d-body"><p>Bisa, hanya jika sedang berstatus pembayar untuk transaksi tersebut. Jika kupon dari agent sudah diterapkan, field kupon terkunci sampai transaksi selesai.</p></div></details>
+        <details><summary>Apakah anggota tetap bisa memakai Wuzz jika pemilik menonaktifkan, Wuzz diblokir, atau akun owner dihapus?</summary><div class="d-body"><ul>
           <li><strong>Wuzz dinonaktifkan (deactivate)</strong> — tetap muncul di daftar kendaraan anggota, tapi tidak bisa digunakan.</li>
           <li><strong>Wuzz diblokir atau akun owner dihapus</strong> — Wuzz akan hilang sepenuhnya dari daftar kendaraan anggota.</li>
-        </ul>
-        <p class="q">Riwayat transaksi member tercatat di riwayat owner?</p>
-        <p>Ya, termasuk struk pembayaran dan data member yang membayar, ditampilkan untuk 6 bulan terakhir.</p>`
+        </ul></div></details>
+        <details><summary>Riwayat transaksi member tercatat di riwayat owner?</summary><div class="d-body"><p>Ya, termasuk struk pembayaran dan data member yang membayar, ditampilkan untuk 6 bulan terakhir.</p></div></details>`
       },
       { heading: "Catatan Dokumen", html: `
         <p>Dokumen internal — disusun dari PRD "Share My Wuzz" (status Draft) untuk referensi tim Product/CS. Cakupan FAQ ini terbatas pada alur pemakaian aplikasi (owner &amp; member); bagian CMS, kasus hapus akun, dan edge case teknis lain tidak disertakan di sini. Perbarui bila PRD berubah atau fitur sudah rilis final.</p>`
@@ -642,18 +622,15 @@ const DEFAULT_PAGES = {
     source: "Berlaku sejak 30 Oktober 2025 — nurarif-png.github.io/FAQ-QRIS-TAP-IN-OUT",
     sections: [
       { heading: "01. Tentang Fitur", html: `
-        <p class="q">Apa itu QRIS Tap In Tap Out?</p>
-        <p>Metode yang memungkinkan satu tap NFC dari aplikasi payment online sekaligus berfungsi sebagai check-in, check-out, <strong>dan</strong> metode pembayaran parkir — tanpa tiket fisik atau QR terpisah.</p>
-        <p class="q">Sejak kapan dan untuk siapa?</p>
-        <p>Berlaku untuk seluruh pengguna sejak <strong>30 Oktober 2025</strong>, via aplikasi payment online yang mendukung QRIS Tap dari HP/smartwatch <strong>Android</strong>.</p>
-        <p class="q">Syarat perangkat?</p>
-        <ul>
+        
+        <details><summary>Apa itu QRIS Tap In Tap Out?</summary><div class="d-body"><p>Metode yang memungkinkan satu tap NFC dari aplikasi payment online sekaligus berfungsi sebagai check-in, check-out, <strong>dan</strong> metode pembayaran parkir — tanpa tiket fisik atau QR terpisah.</p></div></details>
+        <details><summary>Sejak kapan dan untuk siapa?</summary><div class="d-body"><p>Berlaku untuk seluruh pengguna sejak <strong>30 Oktober 2025</strong>, via aplikasi payment online yang mendukung QRIS Tap dari HP/smartwatch <strong>Android</strong>.</p></div></details>
+        <details><summary>Syarat perangkat?</summary><div class="d-body"><ul>
           <li>Perangkat Android (HP/smartwatch) yang mendukung NFC.</li>
           <li>NFC dalam kondisi ON sebelum tap di gate.</li>
           <li>Sudah punya aplikasi payment online yang mendukung QRIS Tap.</li>
-        </ul>
-        <p class="q">Aplikasi yang sudah mendukung?</p>
-        <p>myBCA, GoPay, ShopeePay, DANA, Livin' by Mandiri, dan beberapa aplikasi lain yang mendukung QRIS Tap.</p>`
+        </ul></div></details>
+        <details><summary>Aplikasi yang sudah mendukung?</summary><div class="d-body"><p>myBCA, GoPay, ShopeePay, DANA, Livin' by Mandiri, dan beberapa aplikasi lain yang mendukung QRIS Tap.</p></div></details>`
       },
       { heading: "02. Cara Penggunaan", html: `
         <ol>
@@ -663,8 +640,8 @@ const DEFAULT_PAGES = {
           <li>Saat keluar, tap yang sama di gate keluar — sistem otomatis check-out sekaligus proses pembayaran.</li>
         </ol>
         <p>Video contoh alur transaksi QRIS Tap In Tap Out tersedia di dokumen sumber untuk referensi visual tim CS.</p>
-        <p class="q">Perlu aplikasi PARKEE?</p>
-        <p>Tidak — QRIS Tap dilakukan langsung dari aplikasi payment online pelanggan, selama transaksinya berjenis casual.</p>`
+        
+        <details><summary>Perlu aplikasi PARKEE?</summary><div class="d-body"><p>Tidak — QRIS Tap dilakukan langsung dari aplikasi payment online pelanggan, selama transaksinya berjenis casual.</p></div></details>`
       },
       { heading: "03. Lokasi Aktif", html: `
         <table>
@@ -678,12 +655,10 @@ const DEFAULT_PAGES = {
         <p>Status lokasi bisa berubah sewaktu-waktu — selalu cek dokumen sumber sebelum menyampaikan info ke pelanggan.</p>`
       },
       { heading: "04. Batasan", html: `
-        <p class="q">Jenis transaksi yang didukung?</p>
-        <p>Hanya transaksi <strong>casual</strong>.</p>
-        <p class="q">Bisa untuk transaksi member?</p>
-        <p>Tidak bisa.</p>
-        <p class="q">Bisa untuk fastlane / nested?</p>
-        <p>Belum didukung.</p>`
+        
+        <details><summary>Jenis transaksi yang didukung?</summary><div class="d-body"><p>Hanya transaksi <strong>casual</strong>.</p></div></details>
+        <details><summary>Bisa untuk transaksi member?</summary><div class="d-body"><p>Tidak bisa.</p></div></details>
+        <details><summary>Bisa untuk fastlane / nested?</summary><div class="d-body"><p>Belum didukung.</p></div></details>`
       },
       { heading: "Catatan Dokumen", html: `
         <p>Dokumen internal — disusun untuk referensi tim Product/CS terkait fitur QRIS Tap In Tap Out. Cakupan terbatas pada info umum, cara pakai, lokasi aktif, dan batasan transaksi. Perbarui bila ada perubahan lokasi atau cakupan fitur.</p>`
@@ -729,22 +704,15 @@ const DEFAULT_PAGES = {
         <p>Kompensasi di atas Rp50.000 wajib persetujuan lebih lanjut dari manajemen.</p>`
       },
       { heading: "FAQ", html: `
-        <p class="q">Siapa yang berhak dapat kompensasi?</p>
-        <p>Hanya pengguna dengan keluhan Hard Complain yang terdokumentasi jelas, terkait masalah teknis, pelayanan kurang memuaskan, atau pengalaman pengguna yang buruk. Low &amp; Middle tidak masuk skema ini.</p>
-        <p class="q">Bisa langsung ditawarkan CS?</p>
-        <p>Tidak — wajib evaluasi &amp; koordinasi dengan lead lebih dulu. Kompensasi hanya boleh ditawarkan setelah lead menyetujui, berdasarkan hasil evaluasi yang diajukan CS.</p>
-        <p class="q">Berapa nominal kompensasi yang diberikan?</p>
-        <p>Rp10.000 untuk gangguan layanan atau masalah teknis. Untuk special case — misalnya komplain berulang yang sudah viral — nominalnya bisa di atas Rp50.000, wajib persetujuan manajemen terlebih dahulu.</p>
-        <p class="q">Apa itu "special case"?</p>
-        <p>Komplain sama yang terjadi berulang dan sudah viral di media sosial, memicu pengguna lain berhenti pakai PARKEE atau rating/review buruk.</p>
-        <p class="q">Apa yang wajib disampaikan ke pelanggan?</p>
-        <p>Permintaan maaf, rincian kompensasi, dan penjelasan langkah perbaikan yang sudah/sedang diambil.</p>
-        <p class="q">Dicatat di mana?</p>
-        <p>Gsheet penerima kupon (kompensasi) dan Gsheet komplain (detail keluhan), sebagai bagian dari riwayat pelanggan.</p>
-        <p class="q">Apa tujuan pemberian kompensasi ini bagi PARKEE?</p>
-        <p>Memulihkan kepuasan pelanggan yang kecewa, mencegah kerugian reputasi, menunjukkan tanggung jawab PARKEE atas masalah yang dialami pengguna, dan pada akhirnya meningkatkan retensi pelanggan.</p>
-        <p class="q">Apakah ada pemantauan setelah kupon diberikan?</p>
-        <p>Ya. Tim CS melakukan tindak lanjut untuk memastikan pelanggan puas, dan perusahaan memantau penggunaan kupon untuk menganalisis dampaknya terhadap retensi dan kepuasan pelanggan.</p>`
+        
+        <details><summary>Siapa yang berhak dapat kompensasi?</summary><div class="d-body"><p>Hanya pengguna dengan keluhan Hard Complain yang terdokumentasi jelas, terkait masalah teknis, pelayanan kurang memuaskan, atau pengalaman pengguna yang buruk. Low &amp; Middle tidak masuk skema ini.</p></div></details>
+        <details><summary>Bisa langsung ditawarkan CS?</summary><div class="d-body"><p>Tidak — wajib evaluasi &amp; koordinasi dengan lead lebih dulu. Kompensasi hanya boleh ditawarkan setelah lead menyetujui, berdasarkan hasil evaluasi yang diajukan CS.</p></div></details>
+        <details><summary>Berapa nominal kompensasi yang diberikan?</summary><div class="d-body"><p>Rp10.000 untuk gangguan layanan atau masalah teknis. Untuk special case — misalnya komplain berulang yang sudah viral — nominalnya bisa di atas Rp50.000, wajib persetujuan manajemen terlebih dahulu.</p></div></details>
+        <details><summary>Apa itu "special case"?</summary><div class="d-body"><p>Komplain sama yang terjadi berulang dan sudah viral di media sosial, memicu pengguna lain berhenti pakai PARKEE atau rating/review buruk.</p></div></details>
+        <details><summary>Apa yang wajib disampaikan ke pelanggan?</summary><div class="d-body"><p>Permintaan maaf, rincian kompensasi, dan penjelasan langkah perbaikan yang sudah/sedang diambil.</p></div></details>
+        <details><summary>Dicatat di mana?</summary><div class="d-body"><p>Gsheet penerima kupon (kompensasi) dan Gsheet komplain (detail keluhan), sebagai bagian dari riwayat pelanggan.</p></div></details>
+        <details><summary>Apa tujuan pemberian kompensasi ini bagi PARKEE?</summary><div class="d-body"><p>Memulihkan kepuasan pelanggan yang kecewa, mencegah kerugian reputasi, menunjukkan tanggung jawab PARKEE atas masalah yang dialami pengguna, dan pada akhirnya meningkatkan retensi pelanggan.</p></div></details>
+        <details><summary>Apakah ada pemantauan setelah kupon diberikan?</summary><div class="d-body"><p>Ya. Tim CS melakukan tindak lanjut untuk memastikan pelanggan puas, dan perusahaan memantau penggunaan kupon untuk menganalisis dampaknya terhadap retensi dan kepuasan pelanggan.</p></div></details>`
       },
       { heading: "Catatan Dokumen", html: `
         <p>Disusun berdasarkan dokumen "Framework Pengelolaan Kompensasi Pelanggan dengan Keluhan Keras (Hard Complain) PARKEE." Untuk pencatatan, gunakan Gsheet Penerima Kupon dan Gsheet Komplain sesuai proses internal tim CS.</p>`
